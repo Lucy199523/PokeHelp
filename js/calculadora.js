@@ -29,22 +29,26 @@ var notanatu;
 $(document).ready(function () {
     $("#Aceptar").click(function () {
         //Nivel del pokemon
-        nivel = $("#nivel").val();
+        nivel = parseInt($("#nivel").val());
         //ivs del pokemon
-        ivps = $("#ivps").val();
-        ivatk = $("#ivatk").val();
-        ivdef = $("#ivdef").val();
-        ivatksp = $("#ivatksp").val();
-        ivdefsp = $("#ivdefsp").val();
-        ivvel = $("#ivvel").val();
-        //if (nivel <= 100 || ivps <= 31 || ivatk <= 31 ||  ivdef <= 31  ||ivatksp <= 31 ||  ivdefsp <= 31 || ivvel <= 31 ) {
+        ivps = parseInt($("#ivps").val());
+        ivatk = parseInt($("#ivatk").val());
+        ivdef = parseInt($("#ivdef").val());
+        ivatksp = parseInt($("#ivatksp").val());
+        ivdefsp = parseInt($("#ivdefsp").val());
+        ivvel = parseInt($("#ivvel").val());
+        if (nivel <= 100 && ivps <= 31 && ivatk <= 31 &&  ivdef <= 31  &&ivatksp <= 31 &&
+            ivdefsp <= 31 && ivvel <= 31 ) {
         //evs del pokemon
-        evps = $("#evps").val();
-        evatk = $("#evatk").val();
-        evdef = $("#evdef").val();
-        evatksp = $("#evatksp").val();
-        evdefsp = $("#evdefsp").val();
-        evvel = $("#evvel").val();
+        evps = parseInt($("#evps").val());
+        if (evps==null) {
+            evps=0
+        }
+        evatk = parseInt($("#evatk").val());
+        evdef = parseInt($("#evdef").val());
+        evatksp = parseInt($("#evatksp").val());
+        evdefsp = parseInt($("#evdefsp").val());
+        evvel = parseInt($("#evvel").val());
         //Pokemon Selecionado
         pokeselect = $("#pokeselect").val();
         switch (pokeselect) {
@@ -105,12 +109,13 @@ $(document).ready(function () {
                 vel = null;
         }
         //Calculos
-        fatk = (ivatk + (2 * atk) + (evatk / 4)) * (nivel / 100) + 5;
-        fdef = (ivdef + (2 * def) + (evdef / 4)) * (nivel / 100) + 5;
-        fvel = (ivvel + (2 * vel) + (evvel / 4)) * (nivel / 100) + 5;
-        fatksp = (ivatksp + (2 * atksp) + (evatksp / 4)) * (nivel / 100) + 5;
-        fdefsp = (ivdefsp + (2 * defsp) + (evdefsp / 4)) * (nivel / 100) + 5;
-        fps = (ivps + (2 * ps) + (evps / 4)) * (nivel / 100) + 5;
+        fatk = (((ivatk + 2 * atk + (evatk / 4)) * nivel / 100) + 5);
+        fdef = (((ivdef + 2 * def + (evdef / 4)) * nivel / 100) + 5);
+        fvel = (((ivvel + 2 * vel + (evvel / 4)) * nivel / 100) + 5);
+        fatksp = (((ivatksp + 2 * atksp + (evatksp / 4)) * nivel / 100) + 5);
+        fdefsp = (((ivdefsp + 2 * defsp + (evdefsp / 4)) * nivel / 100) + 5);      
+        fps = ((ivps + 2 * ps + (evps / 4)) * nivel / 100) + 10 + nivel;
+
         //Natulareza seleccionada
         naturaleza = $("#naturaleza").val();
         switch (naturaleza) {
@@ -215,14 +220,14 @@ $(document).ready(function () {
                 notanatu = "Aumenta la Velocidad y baja el Ataque Fisico";
                 break;
         }
-        //} else {alert("Han faltado datos o ha ingresado un dato invalido, verifique que los IVs no superen los 31 o el nivel no supere el 100 y rellene todos los campos")}
+        } else {alert("Han faltado datos o ha ingresado un dato invalido, verifique que los IVs no superen los 31 o el nivel no supere el 100 y rellene todos los campos")}
         //resultados
-        $("#fps").val(fps);
-        $("#fdef").val(fdef);
-        $("#fvel").val(fvel);
-        $("#fatksp").val(fatksp);
-        $("#fdefsp").val(fdefsp);
-        $("#fatk").val(fatk);
+        $("#fps").val(Math.round(fps));
+        $("#fdef").val(Math.round(fdef));
+        $("#fvel").val(Math.round(fvel));
+        $("#fatksp").val(Math.round(fatksp));
+        $("#fdefsp").val(Math.round(fdefsp));
+        $("#fatk").val(Math.round(fatk));
     });
 
 });

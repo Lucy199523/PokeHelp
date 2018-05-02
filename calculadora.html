@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poke Help 1.0 - Calculadora</title>
+    <title>Poke Help 1.1 - Calculadora</title>
     <script src="libs/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="libs/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -36,19 +36,18 @@
         </div>
     </div>
     <div class="ui segment" id="seg-principal">
-        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.0 - Calculadora</h2>
+        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.1 - Calculadora</h2>
         <br>
         <br>
-        <div id="Calculadora" class="ui card">
+        <div class="ui card" id="Calculadora">
             <div class="content">
                 <div class="header">Calculadora</div>
-            </div>
-            <div  class="ui small feed">
-                <div class="ui input">
-                    <input type="number" max="100" placeholder="Ingrese el Nivel" id="nivel">
-                </div>
-                <br>
-                <br>
+                <div class="ui small feed">
+                    <div class="ui input">
+                        <input type="number" max="100" placeholder="Ingrese el Nivel" id="nivel">
+                    </div>
+                    <br>
+                    <br>
                     <select id="pokeselect">
                         <option value="default">Selecciona un Pokemon</option>
                         <option value="bulbasaur">001 - Bulbasaur</option>
@@ -60,108 +59,178 @@
                     </select>
                     <br>
                     <br>
-                <select id="naturaleza">
-                    <option value="default">Selecciona Naturaleza</option>
-                    <option value="Adamant">Adamant</option>
-                    <option value="Bold">Bold</option>
-                    <option value="Brave">Brave</option>
-                    <option value="Calm">Calm</option>
-                    <option value="Careful">Careful</option>
-                    <option value="Gentle">Gentle</option>
-                    <option value="Hasty">Hasty</option>
-                    <option value="Impish">Impish</option>
-                    <option value="Jolly">Jolly</option>
-                    <option value="Lax">Lax</option>
-                    <option value="Lonely">Lonely</option>
-                    <option value="Mild">Mild</option>
-                    <option value="Modest">Modest</option>
-                    <option value="Naive">Naive</option>
-                    <option value="Naughty">Naughty</option>
-                    <option value="Quiet">Quiet</option>
-                    <option value="Rash">Rash</option>
-                    <option value="Relaxed">Relaxed</option>
-                    <option value="Sassy">Sassy</option>
-                    <option value="Timid">Timid</option>
-                </select>
-                <br>
-                <br>
-                <h2 id="seg-principal-titulo" class="ui header blue dividing">IVs Pokemon</h2>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese IVs PS" id="ivps">
+                    <select id="naturaleza">
+                        <option value="default">Selecciona Naturaleza</option>
+                        <option value="Adamant">Adamant</option>
+                        <option value="Bold">Bold</option>
+                        <option value="Brave">Brave</option>
+                        <option value="Calm">Calm</option>
+                        <option value="Careful">Careful</option>
+                        <option value="Gentle">Gentle</option>
+                        <option value="Hasty">Hasty</option>
+                        <option value="Impish">Impish</option>
+                        <option value="Jolly">Jolly</option>
+                        <option value="Lax">Lax</option>
+                        <option value="Lonely">Lonely</option>
+                        <option value="Mild">Mild</option>
+                        <option value="Modest">Modest</option>
+                        <option value="Naive">Naive</option>
+                        <option value="Naughty">Naughty</option>
+                        <option value="Quiet">Quiet</option>
+                        <option value="Rash">Rash</option>
+                        <option value="Relaxed">Relaxed</option>
+                        <option value="Sassy">Sassy</option>
+                        <option value="Timid">Timid</option>
+                    </select>
+                    <br>
+                    <br>
+                    <h2 id="seg-principal-titulo" class="ui header blue dividing">IVs Pokemon</h2>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el IVs PS
+                        </div>
+                        <input type="number" max="31" value="0" id="ivps">
+                    </div>
+
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el IVs Atk
+                        </div>
+                        <input type="number" max="31" value="0" id="ivatk">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el IVs Def
+                        </div>
+                        <input type="number" max="31" value="0" id="ivdef">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el IVs AtkSp
+                        </div>
+                        <input type="number" max="31" value="0" id="ivatksp">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el IVs DefSp
+                        </div>
+                        <input type="number" max="31" value="0" id="ivdefsp">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el IVs Vel
+                        </div>
+                        <input type="number" max="31" value="0" id="ivvel">
+                    </div>
+                    <br>
+                    <br>
+                    <h2 id="seg-principal-titulo" class="ui header blue dividing">EVs Pokemon</h2>
+                    <br>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el EVs PS
+                        </div>
+                        <input type="number" max="31" value="0" id="evps">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el EVs Atk
+                        </div>
+                        <input type="number" max="31" value="0" id="evatk">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el EVs Def
+                        </div>
+                        <input type="number" max="31" value="0" id="evdef">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el EVs AtkSp
+                        </div>
+                        <input type="number" max="31" value="0" id="evatksp">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el EVs DefSp
+                        </div>
+                        <input type="number" max="31" value="0" id="evdefsp">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Ingrese el EVs Vel
+                        </div>
+                        <input type="number" max="31" value="0" id="evvel">
+                    </div>
+                    <br>
+                    <br>
+                    <h2 id="seg-principal-titulo" class="ui header blue dividing">Resultados</h2>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            PS Total
+                        </div>
+                        <input type="number" disabled placeholder="PS" id="fps">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Atk Total
+                        </div>
+                        <input type="number" disabled placeholder="Atk" id="fatk">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            Def Total
+                        </div>
+                        <input type="number" disabled placeholder="Def" id="fdef">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                            <div class="ui label">
+                                AtkSp Total
+                            </div>
+                        <input type="number" disabled placeholder="AtkSp" id="fatksp">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                            <div class="ui label">
+                                DefSp Total
+                            </div>
+                        <input type="number" disabled placeholder="DefSp" id="fdefsp">
+                    </div>
+                    <br>
+                    <div class="ui labeled input">
+                            <div class="ui label">
+                                Vel Total
+                            </div>
+                        <input type="number" disabled placeholder="Vel" id="fvel">
+                    </div>
+                    <br>
+                    <br>
+                    <button class="ui primary button" id="Aceptar">
+                        Aceptar
+                    </button>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese IVs Atk" id="ivatk">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese IVs AtkSp" id="ivatksp">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese IVs DefSp" id="ivdefsp">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese IVs Vel" id="ivvel">
-                </div>
-                <br>
-                <br>
-                <h2 id="seg-principal-titulo" class="ui header blue dividing">EVs Pokemon</h2>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese EVs PS" id="evps">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese EVs Atk" id="evatk">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese EVs AtkSp" id="evatksp">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese EVs DefSp" id="evdefsp">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" max="31" placeholder="Ingrese EVs Vel" id="evvel">
-                </div>
-                <br>
-                <br>
-                <h2 id="seg-principal-titulo" class="ui header blue dividing">Resultados</h2>
-                <br>
-                <div class="ui input">
-                    <input type="number" disabled placeholder="PS" id="fps">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" disabled placeholder="Atk" id="fatk">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" disabled placeholder="AtkSp" id="fatksp">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" disabled placeholder="DefSp" id="fdefsp">
-                </div>
-                <br>
-                <div class="ui input">
-                    <input type="number" disabled placeholder="Vel" id="fvel">
-                </div>
-                <br>
-                <br>
-                <button class="ui primary button" id="Aceptar">
-                    Aceptar
-                </button>
-                <br>
-                <br>
             </div>
+
+
         </div>
-    </div>
     </div>
 </body>
 
