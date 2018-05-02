@@ -31,3 +31,13 @@
     width: 100%;
     height: 100%;
   }
+  #Aceptar{
+    margin: auto;
+    position: relative;
+  }
+  #footer{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
