@@ -623,6 +623,638 @@ $(document).ready(function () {
                 defsp = 100;
                 vel = 70;
                 break;
+            case "Tentacruel":
+                ps = 80;
+                atk = 70;
+                def = 65;
+                atksp = 80;
+                defsp = 120;
+                vel = 100;
+                break;
+            case "Geodude":
+                ps = 40;
+                atk = 80;
+                def = 100;
+                atksp = 30;
+                defsp = 30;
+                vel = 20;
+                break;
+            case "Graveler":
+                ps = 55;
+                atk = 95;
+                def = 115;
+                atksp = 45;
+                defsp = 45;
+                vel = 35;
+                break;
+            case "Golem":
+                ps = 80;
+                atk = 120;
+                def = 130;
+                atksp = 55;
+                defsp = 65;
+                vel = 45;
+                break;
+            case "Ponyta":
+                ps = 50;
+                atk = 85;
+                def = 55;
+                atksp = 65;
+                defsp = 65;
+                vel = 90;
+                break;
+            case "Rapidash":
+                ps = 65;
+                atk = 100;
+                def = 70;
+                atksp = 80;
+                defsp = 80;
+                vel = 105;
+                break;
+            case "Slowpoke":
+                ps = 90;
+                atk = 65;
+                def = 65;
+                atksp = 40;
+                defsp = 40;
+                vel = 15;
+                break;
+            case "Slowbro":
+                ps = 95;
+                atk = 75;
+                def = 110;
+                atksp = 100;
+                defsp = 80;
+                vel = 30;
+                break;
+            case "Magnemite":
+                ps = 25;
+                atk = 35;
+                def = 70;
+                atksp = 95;
+                defsp = 55;
+                vel = 45;
+                break;
+            case "Magneton":
+                ps = 50;
+                atk = 60;
+                def = 95;
+                atksp = 120;
+                defsp = 70;
+                vel = 70;
+                break;
+            case "Farfetch'd":
+                ps = 52;
+                atk = 90;
+                def = 55;
+                atksp = 58;
+                defsp = 62;
+                vel = 60;
+                break;
+            case "Doduo":
+                ps = 35;
+                atk = 85;
+                def = 45;
+                atksp = 35;
+                defsp = 35;
+                vel = 75;
+                break;
+            case "Dodrio":
+                ps = 60;
+                atk = 110;
+                def = 70;
+                atksp = 60;
+                defsp = 60;
+                vel = 110;
+                break;
+            case "Seel":
+                ps = 65;
+                atk = 45;
+                def = 55;
+                atksp = 45;
+                defsp = 70;
+                vel = 45;
+                break;
+            case "Dewgong":
+                ps = 90;
+                atk = 70;
+                def = 80;
+                atksp = 70;
+                defsp = 95;
+                vel = 70;
+                break;
+            case "Grimer":
+                ps = 80;
+                atk = 80;
+                def = 50;
+                atksp = 40;
+                defsp = 50;
+                vel = 25;
+                break;
+            case "Muk":
+                ps = 105;
+                atk = 105;
+                def = 75;
+                atksp = 65;
+                defsp = 100;
+                vel = 50;
+                break;
+            case "Shellder":
+                ps = 30;
+                atk = 65;
+                def = 100;
+                atksp = 45;
+                defsp = 25;
+                vel = 40;
+                break;
+            case "Cloyster":
+                ps = 50;
+                atk = 95;
+                def = 180;
+                atksp = 85;
+                defsp = 45;
+                vel = 70;
+                break;
+            case "Gastly":
+                ps = 30;
+                atk = 35;
+                def = 30;
+                atksp = 100;
+                defsp = 35;
+                vel = 80;
+                break;
+            case "Haunter":
+                ps = 45;
+                atk = 50;
+                def = 45;
+                atksp = 115;
+                defsp = 55;
+                vel = 95;
+                break;
+            case "Gengar":
+                ps = 60;
+                atk = 65;
+                def = 60;
+                atksp = 130;
+                defsp = 75;
+                vel = 110;
+                break;
+            case "Onix":
+                ps = 35;
+                atk = 45;
+                def = 160;
+                atksp = 30;
+                defsp = 45;
+                vel = 70;
+                break;
+            case "Drowzee":
+                ps = 60;
+                atk = 48;
+                def = 45;
+                atksp = 43;
+                defsp = 90;
+                vel = 42;
+                break;
+            case "Hypno":
+                ps = 85;
+                atk = 73;
+                def = 70;
+                atksp = 73;
+                defsp = 115;
+                vel = 67;
+                break;
+            case "Krabby":
+                ps = 30;
+                atk = 105;
+                def = 90;
+                atksp = 25;
+                defsp = 25;
+                vel = 50;
+                break;
+            case "Kingler":
+                ps = 55;
+                atk = 130;
+                def = 115;
+                atksp = 50;
+                defsp = 50;
+                vel = 75;
+                break;
+            case "Voltorb":
+                ps = 40;
+                atk = 30;
+                def = 50;
+                atksp = 55;
+                defsp = 55;
+                vel = 100;
+                break;
+            case "Electrode":
+                ps = 60;
+                atk = 50;
+                def = 70;
+                atksp = 80;
+                defsp = 80;
+                vel = 150;
+                break;
+            case "Exeggcute":
+                ps = 60;
+                atk = 40;
+                def = 80;
+                atksp = 60;
+                defsp = 45;
+                vel = 40;
+                break;
+            case "Exeggutor":
+                ps = 95;
+                atk = 95;
+                def = 85;
+                atksp = 125;
+                defsp = 75;
+                vel = 55;
+                break;
+            case "Cubone":
+                ps = 50;
+                atk = 50;
+                def = 95;
+                atksp = 40;
+                defsp = 50;
+                vel = 35;
+                break;
+            case "Marowak":
+                ps = 60;
+                atk = 80;
+                def = 110;
+                atksp = 50;
+                defsp = 80;
+                vel = 45;
+                break;
+            case "Hitmonlee":
+                ps = 50;
+                atk = 120;
+                def = 53;
+                atksp = 35;
+                defsp = 110;
+                vel = 87;
+                break;
+            case "Hitmonchan":
+                ps = 50;
+                atk = 105;
+                def = 79;
+                atksp = 35;
+                defsp = 110;
+                vel = 76;
+                break;
+            case "Lickitung":
+                ps = 90;
+                atk = 55;
+                def = 75;
+                atksp = 60;
+                defsp = 75;
+                vel = 30;
+                break;
+            case "Koffing":
+                ps = 40;
+                atk = 65;
+                def = 95;
+                atksp = 60;
+                defsp = 45;
+                vel = 35;
+                break;
+            case "Weezing":
+                ps = 65;
+                atk = 90;
+                def = 120;
+                atksp = 85;
+                defsp = 70;
+                vel = 60;
+                break;
+            case "Rhyhorn":
+                ps = 80;
+                atk = 85;
+                def = 95;
+                atksp = 30;
+                defsp = 30;
+                vel = 25;
+                break;
+            case "Rhydon":
+                ps = 105;
+                atk = 130;
+                def = 120;
+                atksp = 45;
+                defsp = 45;
+                vel = 40;
+                break;
+            case "Chansey":
+                ps = 250;
+                atk = 5;
+                def = 5;
+                atksp = 35;
+                defsp = 105;
+                vel = 50;
+                break;
+            case "Tangela":
+                ps = 65;
+                atk = 55;
+                def = 115;
+                atksp = 100;
+                defsp = 40;
+                vel = 60;
+                break;
+            case "Kangaskhan":
+                ps = 105;
+                atk = 95;
+                def = 80;
+                atksp = 40;
+                defsp = 80;
+                vel = 90;
+                break;
+            case "Horsea":
+                ps = 30;
+                atk = 40;
+                def = 70;
+                atksp = 70;
+                defsp = 25;
+                vel = 60;
+                break;
+            case "Seadra":
+                ps = 55;
+                atk = 65;
+                def = 95;
+                atksp = 95;
+                defsp = 45;
+                vel = 85;
+                break;
+            case "Goldeen":
+                ps = 45;
+                atk = 67;
+                def = 60;
+                atksp = 35;
+                defsp = 50;
+                vel = 63;
+                break;
+            case "Seaking":
+                ps = 80;
+                atk = 92;
+                def = 65;
+                atksp = 65;
+                defsp = 80;
+                vel = 68;
+                break;
+            case "Staryu":
+                ps = 30;
+                atk = 45;
+                def = 55;
+                atksp = 70;
+                defsp = 55;
+                vel = 85;
+                break;
+            case "Starmie":
+                ps = 60;
+                atk = 75;
+                def = 85;
+                atksp = 100;
+                defsp = 85;
+                vel = 115;
+                break;
+            case "Mr. Mime":
+                ps = 40;
+                atk = 45;
+                def = 65;
+                atksp = 100;
+                defsp = 120;
+                vel = 90;
+                break;
+            case "Scyther":
+                ps = 70;
+                atk = 110;
+                def = 80;
+                atksp = 55;
+                defsp = 80;
+                vel = 105;
+                break;
+            case "Jynx":
+                ps = 65;
+                atk = 50;
+                def = 35;
+                atksp = 115;
+                defsp = 95;
+                vel = 95;
+                break;
+            case "Electabuzz":
+                ps = 65;
+                atk = 83;
+                def = 57;
+                atksp = 95;
+                defsp = 85;
+                vel = 105;
+                break;
+            case "Magmar":
+                ps = 65;
+                atk = 95;
+                def = 57;
+                atksp = 100;
+                defsp = 85;
+                vel = 93;
+                break;
+            case "Pinsir":
+                ps = 65;
+                atk = 125;
+                def = 100;
+                atksp = 55;
+                defsp = 70;
+                vel = 85;
+                break;
+            case "Tauros":
+                ps = 75;
+                atk = 100;
+                def = 95;
+                atksp = 40;
+                defsp = 70;
+                vel = 110;
+                break;
+            case "Magikarp":
+                ps = 20;
+                atk = 10;
+                def = 55;
+                atksp = 15;
+                defsp = 20;
+                vel = 80;
+                break;
+            case "Gyarados":
+                ps = 95;
+                atk = 125;
+                def = 79;
+                atksp = 60;
+                defsp = 100;
+                vel = 81;
+                break;
+            case "Lapras":
+                ps = 130;
+                atk = 85;
+                def = 80;
+                atksp = 85;
+                defsp = 95;
+                vel = 60;
+                break;
+            case "Ditto":
+                ps = 48;
+                atk = 48;
+                def = 48;
+                atksp = 48;
+                defsp = 48;
+                vel = 48;
+                break;
+            case "Eevee":
+                ps = 55;
+                atk = 55;
+                def = 50;
+                atksp = 45;
+                defsp = 65;
+                vel = 55;
+                break;
+            case "Vaporeon":
+                ps = 130;
+                atk = 65;
+                def = 60;
+                atksp = 110;
+                defsp = 95;
+                vel = 65;
+                break;
+            case "Jolteon":
+                ps = 65;
+                atk = 65;
+                def = 60;
+                atksp = 110;
+                defsp = 95;
+                vel = 130;
+                break;
+            case "Flareon":
+                ps = 65;
+                atk = 130;
+                def = 60;
+                atksp = 95;
+                defsp = 110;
+                vel = 65;
+                break;
+            case "Porygon":
+                ps = 65;
+                atk = 60;
+                def = 70;
+                atksp = 85;
+                defsp = 75;
+                vel = 40;
+                break;
+            case "Omanyte":
+                ps = 35;
+                atk = 40;
+                def = 100;
+                atksp = 90;
+                defsp = 55;
+                vel = 35;
+                break;
+            case "Omastar":
+                ps = 70;
+                atk = 60;
+                def = 125;
+                atksp = 115;
+                defsp = 70;
+                vel = 55;
+                break;
+            case "Kabuto":
+                ps = 30;
+                atk = 80;
+                def = 90;
+                atksp = 55;
+                defsp = 45;
+                vel = 55;
+                break;
+            case "Kabutops":
+                ps = 60;
+                atk = 115;
+                def = 105;
+                atksp = 65;
+                defsp = 70;
+                vel = 80;
+                break;
+            case "Aerodactyl":
+                ps = 80;
+                atk = 105;
+                def = 65;
+                atksp = 60;
+                defsp = 75;
+                vel = 130;
+                break;
+            case "Snorlax":
+                ps = 160;
+                atk = 110;
+                def = 65;
+                atksp = 65;
+                defsp = 110;
+                vel = 30;
+                break;
+            case "Articuno":
+                ps = 90;
+                atk = 85;
+                def = 100;
+                atksp = 95;
+                defsp = 125;
+                vel = 85;
+                break;
+            case "Zapdos":
+                ps = 90;
+                atk = 90;
+                def = 85;
+                atksp = 125;
+                defsp = 90;
+                vel = 100;
+                break;
+            case "Moltres":
+                ps = 90;
+                atk = 100;
+                def = 90;
+                atksp = 125;
+                defsp = 85;
+                vel = 90;
+                break;
+            case "Dratini":
+                ps = 41;
+                atk = 64;
+                def = 45;
+                atksp = 50;
+                defsp = 50;
+                vel = 50;
+                break;
+            case "Dragonair":
+                ps = 61;
+                atk = 84;
+                def = 65;
+                atksp = 70;
+                defsp = 70;
+                vel = 70;
+                break;
+            case "Dragonite":
+                ps = 91;
+                atk = 134;
+                def = 95;
+                atksp = 100;
+                defsp = 100;
+                vel = 80;
+                break;
+            case "Mewtwo":
+                ps = 106;
+                atk = 110;
+                def = 90;
+                atksp = 154;
+                defsp = 90;
+                vel = 130;
+                break;
+            case "Mew":
+                ps = 100;
+                atk = 100;
+                def = 100;
+                atksp = 100;
+                defsp = 100;
+                vel = 100;
+                break;
             default:
                 ps = null;
                 atk = null;
@@ -759,4 +1391,3 @@ $(document).ready(function () {
     });
 
 });
-

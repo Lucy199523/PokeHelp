@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poke Help 1.1.1 - Calculadora</title>
-    <script src="libs/jquery-3.3.1.min.js"></script>
+    <title>Poke Help 1.2 - Calculadora</title>
     <link rel="stylesheet" href="libs/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="libs/dropdown.min.css">
+    <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/semantic.min.js"></script>
-    <script src="libs/dropdown.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/calculadora.js"></script>
 
@@ -34,262 +32,351 @@
         </div>
     </div>
     <div class="ui segment" id="seg-principal">
-        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.1.1 - Calculadora</h2>
+        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.2 - Calculadora</h2>
         <br>
         <br>
         <div class="ui card" id="Calculadora">
             <div class="content">
                 <div class="header">Calculadora</div>
                 <div class="ui small feed">
-                    <div class="ui grid">
+                    <div class="ui stackable four column grid">
                         <div class="four wide column">
                             <h2 id="seg-principal-titulo" class="ui header blue dividing">Datos Pokemon</h2>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
-                                    Ingrese el Nivel
+                                <div class="ui label text-input-label-0">
+                                    Nivel
                                 </div>
-                                <input type="number" max="100" value="0" id="nivel">
+                                <input class="text-input-numb" type="number" max="100" value="0" id="nivel">
                             </div>
                             <br>
                             <br>
-                            <select id="pokeselect">
-                                <option value="default">Selecciona un Pokemon</option>
-                                <option value="Bulbasaur">Bulbasaur</option>
-                                <option value="Ivysaur">Ivysaur</option>
-                                <option value="Venusaur">Venusaur</option>
-                                <option value="Charmander">Charmander</option>
-                                <option value="Charmeleon">Charmeleon</option>
-                                <option value="Charizard">Charizard</option>
-                                <option value="Squirtle">Squirtle</option>
-                                <option value="Wartortle">Wartortle</option>
-                                <option value="Blastoise">Blastoise</option>
-                                <option value="Caterpie">Caterpie</option>
-                                <option value="Metapod">Metapod</option>
-                                <option value="Butterfree">Butterfree</option>
-                                <option value="Weedle">Weedle</option>
-                                <option value="Kakuna">Kakuna</option>
-                                <option value="Beedrill">Beedrill</option>
-                                <option value="Pidgey">Pidgey</option>
-                                <option value="Pidgeotto">Pidgeotto</option>
-                                <option value="Pidgeot">Pidgeot</option>
-                                <option value="Rattata">Rattata</option>
-                                <option value="Raticate">Raticate</option>
-                                <option value="Spearow">Spearow</option>
-                                <option value="Fearow">Fearow</option>
-                                <option value="Ekans">Ekans</option>
-                                <option value="Arbok">Arbok</option>
-                                <option value="Pikachu">Pikachu</option>
-                                <option value="Raichu">Raichu</option>
-                                <option value="Sandshrew">Sandshrew</option>
-                                <option value="Sandslash">Sandslash</option>
-                                <option value="Nidoran♀">Nidoran♀</option>
-                                <option value="Nidorina">Nidorina</option>
-                                <option value="Nidoqueen">Nidoqueen</option>
-                                <option value="Nidoran♂">Nidoran♂</option>
-                                <option value="Nidorino">Nidorino</option>
-                                <option value="Nidoking">Nidoking</option>
-                                <option value="Clefairy">Clefairy</option>
-                                <option value="Clefable">Clefable</option>
-                                <option value="Vulpix">Vulpix</option>
-                                <option value="Ninetales">Ninetales</option>
-                                <option value="Jigglypuff">Jigglypuff</option>
-                                <option value="Wigglytuff">Wigglytuff</option>
-                                <option value="Zubat">Zubat</option>
-                                <option value="Golbat">Golbat</option>
-                                <option value="Oddish">Oddish</option>
-                                <option value="Gloom">Gloom</option>
-                                <option value="Vileplume">Vileplume</option>
-                                <option value="Paras">Paras</option>
-                                <option value="Parasect">Parasect</option>
-                                <option value="Venonat">Venonat</option>
-                                <option value="Venomoth">Venomoth</option>
-                                <option value="Diglett">Diglett</option>
-                                <option value="Dugtrio">Dugtrio</option>
-                                <option value="Meowth">Meowth</option>
-                                <option value="Persian">Persian</option>
-                                <option value="Psyduck">Psyduck</option>
-                                <option value="Golduck">Golduck</option>
-                                <option value="Mankey">Mankey</option>
-                                <option value="Primeape">Primeape</option>
-                                <option value="Growlithe">Growlithe</option>
-                                <option value="Arcanine">Arcanine</option>
-                                <option value="Poliwag">Poliwag</option>
-                                <option value="Poliwhirl">Poliwhirl</option>
-                                <option value="Poliwrath">Poliwrath</option>
-                                <option value="Abra">Abra</option>
-                                <option value="Kadabra">Kadabra</option>
-                                <option value="Alakazam">Alakazam</option>
-                                <option value="Machop">Machop</option>
-                                <option value="Machoke">Machoke</option>
-                                <option value="Machamp">Machamp</option>
-                                <option value="Bellsprout">Bellsprout</option>
-                                <option value="Weepinbell">Weepinbell</option>
-                                <option value="Victreebel">Victreebel</option>
-                                <option value="Tentacool">Tentacool</option>
-
-                            </select>
+                            <div class="ui labeled input">
+                                <div class="ui label text-input-label-0">
+                                    Pokemon
+                                </div>
+                                <select class="ui search selection dropdown text-input-numb-2" id="pokeselect">
+                                    <option value="default"></option>
+                                    <option value="Bulbasaur">Bulbasaur</option>
+                                    <option value="Ivysaur">Ivysaur</option>
+                                    <option value="Venusaur">Venusaur</option>
+                                    <option value="Charmander">Charmander</option>
+                                    <option value="Charmeleon">Charmeleon</option>
+                                    <option value="Charizard">Charizard</option>
+                                    <option value="Squirtle">Squirtle</option>
+                                    <option value="Wartortle">Wartortle</option>
+                                    <option value="Blastoise">Blastoise</option>
+                                    <option value="Caterpie">Caterpie</option>
+                                    <option value="Metapod">Metapod</option>
+                                    <option value="Butterfree">Butterfree</option>
+                                    <option value="Weedle">Weedle</option>
+                                    <option value="Kakuna">Kakuna</option>
+                                    <option value="Beedrill">Beedrill</option>
+                                    <option value="Pidgey">Pidgey</option>
+                                    <option value="Pidgeotto">Pidgeotto</option>
+                                    <option value="Pidgeot">Pidgeot</option>
+                                    <option value="Rattata">Rattata</option>
+                                    <option value="Raticate">Raticate</option>
+                                    <option value="Spearow">Spearow</option>
+                                    <option value="Fearow">Fearow</option>
+                                    <option value="Ekans">Ekans</option>
+                                    <option value="Arbok">Arbok</option>
+                                    <option value="Pikachu">Pikachu</option>
+                                    <option value="Raichu">Raichu</option>
+                                    <option value="Sandshrew">Sandshrew</option>
+                                    <option value="Sandslash">Sandslash</option>
+                                    <option value="Nidoran♀">Nidoran♀</option>
+                                    <option value="Nidorina">Nidorina</option>
+                                    <option value="Nidoqueen">Nidoqueen</option>
+                                    <option value="Nidoran♂">Nidoran♂</option>
+                                    <option value="Nidorino">Nidorino</option>
+                                    <option value="Nidoking">Nidoking</option>
+                                    <option value="Clefairy">Clefairy</option>
+                                    <option value="Clefable">Clefable</option>
+                                    <option value="Vulpix">Vulpix</option>
+                                    <option value="Ninetales">Ninetales</option>
+                                    <option value="Jigglypuff">Jigglypuff</option>
+                                    <option value="Wigglytuff">Wigglytuff</option>
+                                    <option value="Zubat">Zubat</option>
+                                    <option value="Golbat">Golbat</option>
+                                    <option value="Oddish">Oddish</option>
+                                    <option value="Gloom">Gloom</option>
+                                    <option value="Vileplume">Vileplume</option>
+                                    <option value="Paras">Paras</option>
+                                    <option value="Parasect">Parasect</option>
+                                    <option value="Venonat">Venonat</option>
+                                    <option value="Venomoth">Venomoth</option>
+                                    <option value="Diglett">Diglett</option>
+                                    <option value="Dugtrio">Dugtrio</option>
+                                    <option value="Meowth">Meowth</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Psyduck">Psyduck</option>
+                                    <option value="Golduck">Golduck</option>
+                                    <option value="Mankey">Mankey</option>
+                                    <option value="Primeape">Primeape</option>
+                                    <option value="Growlithe">Growlithe</option>
+                                    <option value="Arcanine">Arcanine</option>
+                                    <option value="Poliwag">Poliwag</option>
+                                    <option value="Poliwhirl">Poliwhirl</option>
+                                    <option value="Poliwrath">Poliwrath</option>
+                                    <option value="Abra">Abra</option>
+                                    <option value="Kadabra">Kadabra</option>
+                                    <option value="Alakazam">Alakazam</option>
+                                    <option value="Machop">Machop</option>
+                                    <option value="Machoke">Machoke</option>
+                                    <option value="Machamp">Machamp</option>
+                                    <option value="Bellsprout">Bellsprout</option>
+                                    <option value="Weepinbell">Weepinbell</option>
+                                    <option value="Victreebel">Victreebel</option>
+                                    <option value="Tentacool">Tentacool</option>
+                                    <option value="Tentacruel">Tentacruel</option>
+                                    <option value="Geodude">Geodude</option>
+                                    <option value="Graveler">Graveler</option>
+                                    <option value="Golem">Golem</option>
+                                    <option value="Ponyta">Ponyta</option>
+                                    <option value="Rapidash">Rapidash</option>
+                                    <option value="Slowpoke">Slowpoke</option>
+                                    <option value="Slowbro">Slowbro</option>
+                                    <option value="Magnemite">Magnemite</option>
+                                    <option value="Magneton">Magneton</option>
+                                    <option value="Farfetch'd">Farfetch'd</option>
+                                    <option value="Doduo">Doduo</option>
+                                    <option value="Dodrio">Dodrio</option>
+                                    <option value="Seel">Seel</option>
+                                    <option value="Dewgong">Dewgong</option>
+                                    <option value="Grimer">Grimer</option>
+                                    <option value="Muk">Muk</option>
+                                    <option value="Shellder">Shellder</option>
+                                    <option value="Cloyster">Cloyster</option>
+                                    <option value="Gastly">Gastly</option>
+                                    <option value="Haunter">Haunter</option>
+                                    <option value="Gengar">Gengar</option>
+                                    <option value="Onix">Onix</option>
+                                    <option value="Drowzee">Drowzee</option>
+                                    <option value="Hypno">Hypno</option>
+                                    <option value="Krabby">Krabby</option>
+                                    <option value="Kingler">Kingler</option>
+                                    <option value="Voltorb">Voltorb</option>
+                                    <option value="Electrode">Electrode</option>
+                                    <option value="Exeggcute">Exeggcute</option>
+                                    <option value="Exeggutor">Exeggutor</option>
+                                    <option value="Cubone">Cubone</option>
+                                    <option value="Marowak">Marowak</option>
+                                    <option value="Hitmonlee">Hitmonlee</option>
+                                    <option value="Hitmonchan">Hitmonchan</option>
+                                    <option value="Lickitung">Lickitung</option>
+                                    <option value="Koffing">Koffing</option>
+                                    <option value="Weezing">Weezing</option>
+                                    <option value="Rhyhorn">Rhyhorn</option>
+                                    <option value="Rhydon">Rhydon</option>
+                                    <option value="Chansey">Chansey</option>
+                                    <option value="Tangela">Tangela</option>
+                                    <option value="Kangaskhan">Kangaskhan</option>
+                                    <option value="Horsea">Horsea</option>
+                                    <option value="Seadra">Seadra</option>
+                                    <option value="Goldeen">Goldeen</option>
+                                    <option value="Seaking">Seaking</option>
+                                    <option value="Staryu">Staryu</option>
+                                    <option value="Starmie">Starmie</option>
+                                    <option value="Mr. Mime">Mr. Mime</option>
+                                    <option value="Scyther">Scyther</option>
+                                    <option value="Jynx">Jynx</option>
+                                    <option value="Electabuzz">Electabuzz</option>
+                                    <option value="Magmar">Magmar</option>
+                                    <option value="Pinsir">Pinsir</option>
+                                    <option value="Tauros">Tauros</option>
+                                    <option value="Magikarp">Magikarp</option>
+                                    <option value="Gyarados">Gyarados</option>
+                                    <option value="Lapras">Lapras</option>
+                                    <option value="Ditto">Ditto</option>
+                                    <option value="Eevee">Eevee</option>
+                                    <option value="Vaporeon">Vaporeon</option>
+                                    <option value="Jolteon">Jolteon</option>
+                                    <option value="Flareon">Flareon</option>
+                                    <option value="Porygon">Porygon</option>
+                                    <option value="Omanyte">Omanyte</option>
+                                    <option value="Omastar">Omastar</option>
+                                    <option value="Kabuto">Kabuto</option>
+                                    <option value="Kabutops">Kabutops</option>
+                                    <option value="Aerodactyl">Aerodactyl</option>
+                                    <option value="Snorlax">Snorlax</option>
+                                    <option value="Articuno">Articuno</option>
+                                    <option value="Zapdos">Zapdos</option>
+                                    <option value="Moltres">Moltres</option>
+                                    <option value="Dratini">Dratini</option>
+                                    <option value="Dragonair">Dragonair</option>
+                                    <option value="Dragonite">Dragonite</option>
+                                    <option value="Mewtwo">Mewtwo</option>
+                                    <option value="Mew">Mew</option>
+                                </select>
+                            </div>
                             <br>
                             <br>
-                            <select id="naturaleza">
-                                <option value="default">Selecciona Naturaleza</option>
-                                <option value="Adamant">Adamant</option>
-                                <option value="Bold">Bold</option>
-                                <option value="Brave">Brave</option>
-                                <option value="Calm">Calm</option>
-                                <option value="Careful">Careful</option>
-                                <option value="Gentle">Gentle</option>
-                                <option value="Hasty">Hasty</option>
-                                <option value="Impish">Impish</option>
-                                <option value="Jolly">Jolly</option>
-                                <option value="Lax">Lax</option>
-                                <option value="Lonely">Lonely</option>
-                                <option value="Mild">Mild</option>
-                                <option value="Modest">Modest</option>
-                                <option value="Naive">Naive</option>
-                                <option value="Naughty">Naughty</option>
-                                <option value="Quiet">Quiet</option>
-                                <option value="Rash">Rash</option>
-                                <option value="Relaxed">Relaxed</option>
-                                <option value="Sassy">Sassy</option>
-                                <option value="Timid">Timid</option>
-                            </select>
+                            <div class="ui labeled input">
+                                <div class="ui label text-input-label-0">
+                                    Naturaleza
+                                </div>
+                                <select class="ui search selection dropdown text-input-numb-2" id="naturaleza">
+                                    <option value="default">Selecciona Naturaleza</option>
+                                    <option value="Adamant">Adamant</option>
+                                    <option value="Bold">Bold</option>
+                                    <option value="Brave">Brave</option>
+                                    <option value="Calm">Calm</option>
+                                    <option value="Careful">Careful</option>
+                                    <option value="Gentle">Gentle</option>
+                                    <option value="Hasty">Hasty</option>
+                                    <option value="Impish">Impish</option>
+                                    <option value="Jolly">Jolly</option>
+                                    <option value="Lax">Lax</option>
+                                    <option value="Lonely">Lonely</option>
+                                    <option value="Mild">Mild</option>
+                                    <option value="Modest">Modest</option>
+                                    <option value="Naive">Naive</option>
+                                    <option value="Naughty">Naughty</option>
+                                    <option value="Quiet">Quiet</option>
+                                    <option value="Rash">Rash</option>
+                                    <option value="Relaxed">Relaxed</option>
+                                    <option value="Sassy">Sassy</option>
+                                    <option value="Timid">Timid</option>
+                                </select>
+                                <br>
+                            </div>
                             <br>
                         </div>
                         <div class="four wide column">
                             <h2 id="seg-principal-titulo" class="ui header blue dividing">IVs Pokemon</h2>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-1">
                                     Ingrese el IVs PS
                                 </div>
-                                <input type="number" max="31" value="0" id="ivps">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="ivps">
                             </div>
 
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-1">
                                     Ingrese el IVs Atk
                                 </div>
-                                <input type="number" max="31" value="0" id="ivatk">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="ivatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-1">
                                     Ingrese el IVs Def
                                 </div>
-                                <input type="number" max="31" value="0" id="ivdef">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="ivdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-1">
                                     Ingrese el IVs AtkSp
                                 </div>
-                                <input type="number" max="31" value="0" id="ivatksp">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="ivatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-1">
                                     Ingrese el IVs DefSp
                                 </div>
-                                <input type="number" max="31" value="0" id="ivdefsp">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="ivdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
-                                    Ingrese el IVs Vel
-                                </div>
-                                <input type="number" max="31" value="0" id="ivvel">
+                                <div class="ui label text-input-label-1">Ingrese el IVs Vel</div>
+                                <input class="text-input-numb" type="number" max="31" value="0" id="ivvel">
                             </div>
+                            <br>
                         </div>
                         <div class="four wide column">
                             <h2 id="seg-principal-titulo" class="ui header blue dividing">EVs Pokemon</h2>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-2">
                                     Ingrese el EVs PS
                                 </div>
-                                <input type="number" max="31" value="0" id="evps">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="evps">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-2">
                                     Ingrese el EVs Atk
                                 </div>
-                                <input type="number" max="31" value="0" id="evatk">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="evatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-2">
                                     Ingrese el EVs Def
                                 </div>
-                                <input type="number" max="31" value="0" id="evdef">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="evdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-2">
                                     Ingrese el EVs AtkSp
                                 </div>
-                                <input type="number" max="31" value="0" id="evatksp">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="evatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-2">
                                     Ingrese el EVs DefSp
                                 </div>
-                                <input type="number" max="31" value="0" id="evdefsp">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="evdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-2">
                                     Ingrese el EVs Vel
                                 </div>
-                                <input type="number" max="31" value="0" id="evvel">
+                                <input class="text-input-numb" type="number" max="31" value="0" id="evvel">
                             </div>
+                            <br>
                         </div>
                         <div class="four wide column">
                             <h2 id="seg-principal-titulo" class="ui header blue dividing">Resultados</h2>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-3">
                                     PS Total
                                 </div>
-                                <input type="number" disabled placeholder="PS" id="fps">
+                                <input class="text-input-numb" type="number" disabled placeholder="PS" id="fps">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-3">
                                     Atk Total
                                 </div>
-                                <input type="number" disabled placeholder="Atk" id="fatk">
+                                <input class="text-input-numb" type="number" disabled placeholder="Atk" id="fatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-3">
                                     Def Total
                                 </div>
-                                <input type="number" disabled placeholder="Def" id="fdef">
+                                <input class="text-input-numb" type="number" disabled placeholder="Def" id="fdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-3">
                                     AtkSp Total
                                 </div>
-                                <input type="number" disabled placeholder="AtkSp" id="fatksp">
+                                <input class="text-input-numb" type="number" disabled placeholder="AtkSp" id="fatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-3">
                                     DefSp Total
                                 </div>
-                                <input type="number" disabled placeholder="DefSp" id="fdefsp">
+                                <input class="text-input-numb" type="number" disabled placeholder="DefSp" id="fdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label">
+                                <div class="ui label text-input-label-3">
                                     Vel Total
                                 </div>
-                                <input type="number" disabled placeholder="Vel" id="fvel">
+                                <input class="text-input-numb" type="number" disabled placeholder="Vel" id="fvel">
                             </div>
                             <br>
                         </div>
