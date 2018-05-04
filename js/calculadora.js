@@ -1255,6 +1255,806 @@ $(document).ready(function () {
                 defsp = 100;
                 vel = 100;
                 break;
+            case "Chikorita":
+                ps = 45;
+                atk = 49;
+                def = 65;
+                atksp = 49;
+                defsp = 65;
+                vel = 45;
+                break;
+            case "Bayleef":
+                ps = 60;
+                atk = 62;
+                def = 80;
+                atksp = 63;
+                defsp = 80;
+                vel = 60;
+                break;
+            case "Meganium":
+                ps = 80;
+                atk = 82;
+                def = 100;
+                atksp = 83;
+                defsp = 100;
+                vel = 80;
+                break;
+            case "Cyndaquil":
+                ps = 39;
+                atk = 52;
+                def = 43;
+                atksp = 60;
+                defsp = 50;
+                vel = 65;
+                break;
+            case "Quilava":
+                ps = 58;
+                atk = 64;
+                def = 58;
+                atksp = 80;
+                defsp = 65;
+                vel = 80;
+                break;
+            case "Typhlosion":
+                ps = 78;
+                atk = 84;
+                def = 78;
+                atksp = 109;
+                defsp = 85;
+                vel = 100;
+                break;
+            case "Totodile":
+                ps = 50;
+                atk = 65;
+                def = 64;
+                atksp = 44;
+                defsp = 48;
+                vel = 43;
+                break;
+            case "Croconaw":
+                ps = 65;
+                atk = 80;
+                def = 80;
+                atksp = 59;
+                defsp = 63;
+                vel = 58;
+                break;
+            case "Feraligatr":
+                ps = 85;
+                atk = 105;
+                def = 100;
+                atksp = 79;
+                defsp = 83;
+                vel = 78;
+                break;
+            case "Sentret":
+                ps = 35;
+                atk = 46;
+                def = 34;
+                atksp = 35;
+                defsp = 45;
+                vel = 20;
+                break;
+            case "Furret":
+                ps = 85;
+                atk = 76;
+                def = 64;
+                atksp = 45;
+                defsp = 55;
+                vel = 90;
+                break;
+            case "Hoothoot":
+                ps = 60;
+                atk = 30;
+                def = 30;
+                atksp = 36;
+                defsp = 56;
+                vel = 50;
+                break;
+            case "Noctowl":
+                ps = 100;
+                atk = 50;
+                def = 50;
+                atksp = 86;
+                defsp = 96;
+                vel = 70;
+                break;
+            case "Ledyba":
+                ps = 40;
+                atk = 20;
+                def = 30;
+                atksp = 40;
+                defsp = 80;
+                vel = 55;
+                break;
+            case "Ledian":
+                ps = 55;
+                atk = 35;
+                def = 50;
+                atksp = 55;
+                defsp = 110;
+                vel = 85;
+                break;
+            case "Spinarak":
+                ps = 40;
+                atk = 60;
+                def = 40;
+                atksp = 40;
+                defsp = 40;
+                vel = 30;
+                break;
+            case "Ariados":
+                ps = 70;
+                atk = 90;
+                def = 70;
+                atksp = 60;
+                defsp = 70;
+                vel = 40;
+                break;
+            case "Crobat":
+                ps = 85;
+                atk = 90;
+                def = 80;
+                atksp = 70;
+                defsp = 80;
+                vel = 130;
+                break;
+            case "Chinchou":
+                ps = 75;
+                atk = 38;
+                def = 38;
+                atksp = 56;
+                defsp = 56;
+                vel = 67;
+                break;
+            case "Lanturn":
+                ps = 125;
+                atk = 58;
+                def = 58;
+                atksp = 76;
+                defsp = 76;
+                vel = 67;
+                break;
+            case "Pichu":
+                ps = 20;
+                atk = 40;
+                def = 15;
+                atksp = 35;
+                defsp = 35;
+                vel = 60;
+                break;
+            case "Cleffa":
+                ps = 50;
+                atk = 25;
+                def = 28;
+                atksp = 45;
+                defsp = 55;
+                vel = 15;
+                break;
+            case "Igglybuff":
+                ps = 90;
+                atk = 30;
+                def = 15;
+                atksp = 40;
+                defsp = 20;
+                vel = 15;
+                break;
+            case "Togepi":
+                ps = 35;
+                atk = 20;
+                def = 65;
+                atksp = 40;
+                defsp = 65;
+                vel = 20;
+                break;
+            case "Togetic":
+                ps = 55;
+                atk = 40;
+                def = 85;
+                atksp = 80;
+                defsp = 105;
+                vel = 40;
+                break;
+            case "Natu":
+                ps = 40;
+                atk = 50;
+                def = 45;
+                atksp = 70;
+                defsp = 45;
+                vel = 70;
+                break;
+            case "Xatu":
+                ps = 65;
+                atk = 75;
+                def = 70;
+                atksp = 95;
+                defsp = 70;
+                vel = 95;
+                break;
+            case "Mareep":
+                ps = 55;
+                atk = 40;
+                def = 40;
+                atksp = 65;
+                defsp = 45;
+                vel = 35;
+                break;
+            case "Flaaffy":
+                ps = 70;
+                atk = 55;
+                def = 55;
+                atksp = 80;
+                defsp = 60;
+                vel = 45;
+                break;
+            case "Ampharos":
+                ps = 90;
+                atk = 75;
+                def = 85;
+                atksp = 115;
+                defsp = 90;
+                vel = 55;
+                break;
+            case "Bellossom":
+                ps = 75;
+                atk = 80;
+                def = 95;
+                atksp = 90;
+                defsp = 100;
+                vel = 50;
+                break;
+            case "Marill":
+                ps = 70;
+                atk = 20;
+                def = 50;
+                atksp = 20;
+                defsp = 50;
+                vel = 40;
+                break;
+            case "Azumarill":
+                ps = 100;
+                atk = 50;
+                def = 80;
+                atksp = 60;
+                defsp = 80;
+                vel = 50;
+                break;
+            case "Sudowoodo":
+                ps = 70;
+                atk = 100;
+                def = 115;
+                atksp = 30;
+                defsp = 65;
+                vel = 30;
+                break;
+            case "Politoed":
+                ps = 90;
+                atk = 75;
+                def = 75;
+                atksp = 90;
+                defsp = 100;
+                vel = 70;
+                break;
+            case "Hoppip":
+                ps = 35;
+                atk = 35;
+                def = 40;
+                atksp = 35;
+                defsp = 55;
+                vel = 50;
+                break;
+            case "Skiploom":
+                ps = 55;
+                atk = 45;
+                def = 50;
+                atksp = 45;
+                defsp = 65;
+                vel = 80;
+                break;
+            case "Jumpluff":
+                ps = 75;
+                atk = 55;
+                def = 70;
+                atksp = 55;
+                defsp = 95;
+                vel = 110;
+                break;
+            case "Aipom":
+                ps = 55;
+                atk = 70;
+                def = 55;
+                atksp = 40;
+                defsp = 55;
+                vel = 85;
+                break;
+            case "Sunkern":
+                ps = 30;
+                atk = 30;
+                def = 30;
+                atksp = 30;
+                defsp = 30;
+                vel = 30;
+                break;
+            case "Sunflora":
+                ps = 75;
+                atk = 75;
+                def = 55;
+                atksp = 105;
+                defsp = 85;
+                vel = 30;
+                break;
+            case "Yanma":
+                ps = 65;
+                atk = 65;
+                def = 45;
+                atksp = 75;
+                defsp = 45;
+                vel = 95;
+                break;
+            case "Wooper":
+                ps = 55;
+                atk = 45;
+                def = 45;
+                atksp = 25;
+                defsp = 25;
+                vel = 15;
+                break;
+            case "Quagsire":
+                ps = 95;
+                atk = 85;
+                def = 85;
+                atksp = 65;
+                defsp = 65;
+                vel = 35;
+                break;
+            case "Espeon":
+                ps = 65;
+                atk = 65;
+                def = 60;
+                atksp = 130;
+                defsp = 95;
+                vel = 110;
+                break;
+            case "Umbreon":
+                ps = 95;
+                atk = 65;
+                def = 110;
+                atksp = 60;
+                defsp = 130;
+                vel = 65;
+                break;
+            case "Murkrow":
+                ps = 60;
+                atk = 85;
+                def = 42;
+                atksp = 85;
+                defsp = 42;
+                vel = 91;
+                break;
+            case "Slowking":
+                ps = 95;
+                atk = 75;
+                def = 80;
+                atksp = 100;
+                defsp = 110;
+                vel = 30;
+                break;
+            case "Misdreavus":
+                ps = 60;
+                atk = 60;
+                def = 60;
+                atksp = 85;
+                defsp = 85;
+                vel = 85;
+                break;
+            case "Unown":
+                ps = 48;
+                atk = 72;
+                def = 48;
+                atksp = 72;
+                defsp = 48;
+                vel = 48;
+                break;
+            case "Wobbuffet":
+                ps = 190;
+                atk = 33;
+                def = 58;
+                atksp = 33;
+                defsp = 58;
+                vel = 33;
+                break;
+            case "Girafarig":
+                ps = 70;
+                atk = 80;
+                def = 65;
+                atksp = 90;
+                defsp = 65;
+                vel = 85;
+                break;
+            case "Pineco":
+                ps = 50;
+                atk = 65;
+                def = 90;
+                atksp = 35;
+                defsp = 35;
+                vel = 15;
+                break;
+            case "Forretress":
+                ps = 75;
+                atk = 90;
+                def = 140;
+                atksp = 60;
+                defsp = 60;
+                vel = 40;
+                break;
+            case "Dunsparce":
+                ps = 100;
+                atk = 70;
+                def = 70;
+                atksp = 65;
+                defsp = 65;
+                vel = 45;
+                break;
+            case "Gligar":
+                ps = 65;
+                atk = 75;
+                def = 105;
+                atksp = 35;
+                defsp = 65;
+                vel = 85;
+                break;
+            case "Steelix":
+                ps = 75;
+                atk = 85;
+                def = 200;
+                atksp = 55;
+                defsp = 65;
+                vel = 30;
+                break;
+            case "Snubbull":
+                ps = 60;
+                atk = 80;
+                def = 50;
+                atksp = 40;
+                defsp = 40;
+                vel = 30;
+                break;
+            case "Granbull":
+                ps = 90;
+                atk = 120;
+                def = 75;
+                atksp = 60;
+                defsp = 60;
+                vel = 45;
+                break;
+            case "Qwilfish":
+                ps = 65;
+                atk = 95;
+                def = 85;
+                atksp = 55;
+                defsp = 55;
+                vel = 85;
+                break;
+            case "Scizor":
+                ps = 70;
+                atk = 130;
+                def = 100;
+                atksp = 55;
+                defsp = 80;
+                vel = 65;
+                break;
+            case "Shuckle":
+                ps = 20;
+                atk = 10;
+                def = 230;
+                atksp = 10;
+                defsp = 230;
+                vel = 5;
+                break;
+            case "Heracross":
+                ps = 80;
+                atk = 125;
+                def = 75;
+                atksp = 40;
+                defsp = 95;
+                vel = 85;
+                break;
+            case "Sneasel":
+                ps = 55;
+                atk = 95;
+                def = 55;
+                atksp = 35;
+                defsp = 75;
+                vel = 115;
+                break;
+            case "Teddiursa":
+                ps = 60;
+                atk = 80;
+                def = 50;
+                atksp = 50;
+                defsp = 50;
+                vel = 40;
+                break;
+            case "Ursaring":
+                ps = 90;
+                atk = 130;
+                def = 75;
+                atksp = 75;
+                defsp = 75;
+                vel = 55;
+                break;
+            case "Slugma":
+                ps = 40;
+                atk = 40;
+                def = 40;
+                atksp = 70;
+                defsp = 40;
+                vel = 20;
+                break;
+            case "Magcargo":
+                ps = 60;
+                atk = 50;
+                def = 120;
+                atksp = 90;
+                defsp = 80;
+                vel = 30;
+                break;
+            case "Swinub":
+                ps = 50;
+                atk = 50;
+                def = 40;
+                atksp = 30;
+                defsp = 30;
+                vel = 50;
+                break;
+            case "Piloswine":
+                ps = 100;
+                atk = 100;
+                def = 80;
+                atksp = 60;
+                defsp = 60;
+                vel = 50;
+                break;
+            case "Corsola":
+                ps = 65;
+                atk = 55;
+                def = 95;
+                atksp = 65;
+                defsp = 95;
+                vel = 35;
+                break;
+            case "Remoraid":
+                ps = 35;
+                atk = 65;
+                def = 35;
+                atksp = 65;
+                defsp = 35;
+                vel = 65;
+                break;
+            case "Octillery":
+                ps = 75;
+                atk = 105;
+                def = 75;
+                atksp = 105;
+                defsp = 75;
+                vel = 45;
+                break;
+            case "Delibird":
+                ps = 45;
+                atk = 55;
+                def = 45;
+                atksp = 65;
+                defsp = 45;
+                vel = 75;
+                break;
+            case "Mantine":
+                ps = 85;
+                atk = 40;
+                def = 70;
+                atksp = 80;
+                defsp = 140;
+                vel = 70;
+                break;
+            case "Skarmory":
+                ps = 65;
+                atk = 80;
+                def = 140;
+                atksp = 40;
+                defsp = 70;
+                vel = 70;
+                break;
+            case "Houndour":
+                ps = 45;
+                atk = 60;
+                def = 30;
+                atksp = 80;
+                defsp = 50;
+                vel = 65;
+                break;
+            case "Houndoom":
+                ps = 75;
+                atk = 90;
+                def = 50;
+                atksp = 110;
+                defsp = 80;
+                vel = 95;
+                break;
+            case "Kingdra":
+                ps = 75;
+                atk = 95;
+                def = 95;
+                atksp = 95;
+                defsp = 95;
+                vel = 85;
+                break;
+            case "Phanpy":
+                ps = 90;
+                atk = 60;
+                def = 60;
+                atksp = 40;
+                defsp = 40;
+                vel = 40;
+                break;
+            case "Donphan":
+                ps = 90;
+                atk = 120;
+                def = 120;
+                atksp = 60;
+                defsp = 60;
+                vel = 50;
+                break;
+            case "Porygon2":
+                ps = 85;
+                atk = 80;
+                def = 90;
+                atksp = 105;
+                defsp = 95;
+                vel = 60;
+                break;
+            case "Stantler":
+                ps = 73;
+                atk = 95;
+                def = 62;
+                atksp = 85;
+                defsp = 65;
+                vel = 85;
+                break;
+            case "Smeargle":
+                ps = 55;
+                atk = 20;
+                def = 35;
+                atksp = 20;
+                defsp = 45;
+                vel = 75;
+                break;
+            case "Tyrogue":
+                ps = 35;
+                atk = 35;
+                def = 35;
+                atksp = 35;
+                defsp = 35;
+                vel = 35;
+                break;
+            case "Hitmontop":
+                ps = 50;
+                atk = 95;
+                def = 95;
+                atksp = 35;
+                defsp = 110;
+                vel = 70;
+                break;
+            case "Smoochum":
+                ps = 45;
+                atk = 30;
+                def = 15;
+                atksp = 85;
+                defsp = 65;
+                vel = 65;
+                break;
+            case "Elekid":
+                ps = 45;
+                atk = 63;
+                def = 37;
+                atksp = 65;
+                defsp = 55;
+                vel = 95;
+                break;
+            case "Magby":
+                ps = 45;
+                atk = 75;
+                def = 37;
+                atksp = 70;
+                defsp = 55;
+                vel = 83;
+                break;
+            case "Miltank":
+                ps = 95;
+                atk = 80;
+                def = 105;
+                atksp = 40;
+                defsp = 70;
+                vel = 100;
+                break;
+            case "Blissey":
+                ps = 255;
+                atk = 10;
+                def = 10;
+                atksp = 75;
+                defsp = 135;
+                vel = 55;
+                break;
+            case "Raikou":
+                ps = 90;
+                atk = 85;
+                def = 75;
+                atksp = 115;
+                defsp = 100;
+                vel = 115;
+                break;
+            case "Entei":
+                ps = 115;
+                atk = 115;
+                def = 85;
+                atksp = 90;
+                defsp = 75;
+                vel = 100;
+                break;
+            case "Suicune":
+                ps = 100;
+                atk = 75;
+                def = 115;
+                atksp = 90;
+                defsp = 115;
+                vel = 85;
+                break;
+            case "Larvitar":
+                ps = 50;
+                atk = 64;
+                def = 50;
+                atksp = 45;
+                defsp = 50;
+                vel = 41;
+                break;
+            case "Pupitar":
+                ps = 70;
+                atk = 84;
+                def = 70;
+                atksp = 65;
+                defsp = 70;
+                vel = 51;
+                break;
+            case "Tyranitar":
+                ps = 100;
+                atk = 134;
+                def = 110;
+                atksp = 95;
+                defsp = 100;
+                vel = 61;
+                break;
+            case "Lugia":
+                ps = 106;
+                atk = 90;
+                def = 130;
+                atksp = 90;
+                defsp = 154;
+                vel = 110;
+                break;
+            case "Ho-Oh":
+                ps = 106;
+                atk = 130;
+                def = 90;
+                atksp = 110;
+                defsp = 154;
+                vel = 90;
+                break;
+            case "Celebi":
+                ps = 100;
+                atk = 100;
+                def = 100;
+                atksp = 100;
+                defsp = 100;
+                vel = 100;
+                break;
             case "Klefki":
                 ps = 57;
                 atk = 80;
@@ -1283,143 +2083,142 @@ $(document).ready(function () {
             fps = ((ivps + 2 * ps + (evps / 4)) * nivel / 100) + 10 + nivel;
 
             //correccion de decimales
-            if (fatk-(Math.trunc(fatk))>=0.9) {
-                fatk=Math.trunc(fatk)+1;
+            if (fatk - (Math.trunc(fatk)) >= 0.9) {
+                fatk = Math.trunc(fatk) + 1;
             } else {
-                fatk=Math.trunc(fatk);
+                fatk = Math.trunc(fatk);
             }
-            if (fdef-(Math.trunc(fdef))>=0.9) {
-                fdef=Math.trunc(fdef)+1;
+            if (fdef - (Math.trunc(fdef)) >= 0.9) {
+                fdef = Math.trunc(fdef) + 1;
             } else {
-                fdef=Math.trunc(fdef);
+                fdef = Math.trunc(fdef);
             }
-            if (fvel-(Math.trunc(fvel))>=0.9) {
-                fvel=Math.trunc(fvel)+1;
+            if (fvel - (Math.trunc(fvel)) >= 0.9) {
+                fvel = Math.trunc(fvel) + 1;
             } else {
-                fvel=Math.trunc(fvel);
+                fvel = Math.trunc(fvel);
             }
-            if (fatksp-(Math.trunc(fatksp))>=0.9) {
-                fatksp=Math.trunc(fatksp)+1;
+            if (fatksp - (Math.trunc(fatksp)) >= 0.9) {
+                fatksp = Math.trunc(fatksp) + 1;
             } else {
-                fatksp=Math.trunc(fatksp);
+                fatksp = Math.trunc(fatksp);
             }
-            if (fdefsp-(Math.trunc(fdefsp))>=0.9) {
-                fdefsp=Math.trunc(fdefsp)+1;
+            if (fdefsp - (Math.trunc(fdefsp)) >= 0.9) {
+                fdefsp = Math.trunc(fdefsp) + 1;
             } else {
-                fdefsp=Math.trunc(fdefsp);
+                fdefsp = Math.trunc(fdefsp);
             }
-            if (fps-(Math.trunc(fps))>=0.9) {
-                fps=Math.trunc(fps)+1;
+            if (fps - (Math.trunc(fps)) >= 0.9) {
+                fps = Math.trunc(fps) + 1;
             } else {
-                fps=Math.trunc(fps);
-            }
-
-            //Natulareza seleccionada
-            naturaleza = $("#naturaleza").val();
-            switch (naturaleza) {
-                case "Adamant":
-                    fatk *= 1.1;
-                    fatksp *= 0.9;
-                    notanatu = "Aumenta el Ataque Fisico y baja el Ataque Especial";
-                    break;
-                case "Bold":
-                    fdef *= 1.1;
-                    fatk *= 0.9;
-                    notanatu = "Aumenta la Defensa Fisica y baja el Ataque Fisico";
-                    break;
-                case "Brave":
-                    fatk *= 1.1;
-                    fvel *= 0.9;
-                    notanatu = "Aumenta el Ataque fisico y baja la Velocidad";
-                    break;
-                case "Calm":
-                    fdefsp *= 1.1;
-                    fatk *= 0.9;
-                    notanatu = "Aumenta la Defensa Especial y baja el Ataque Fisico";
-                    break;
-                case "Careful":
-                    fdefsp *= 1.1;
-                    fatksp *= 0.9;
-                    notanatu = "Aumenta la Defensa Especial y baja el Ataque Especial";
-                    break;
-                case "Gentle":
-                    fdefsp *= 1.1;
-                    fdef *= 0.9;
-                    notanatu = "Aumenta la Defensa Especial y baja la Defensa Fisica";
-                    break;
-                case "Hasty":
-                    fvel *= 1.1;
-                    fdef *= 0.9;
-                    notanatu = "Aumenta la Velocidad y baja la Defensa Fisica";
-                    break;
-                case "Impish":
-                    fdef *= 1.1;
-                    fatksp *= 0.9;
-                    notanatu = "Aumenta la Defensa Fisica y baja el Ataque Especial";
-                    break;
-                case "Jolly":
-                    fvel *= 1.1;
-                    fatksp *= 0.9;
-                    notanatu = "Aumenta la Velocidad y baja el Ataque Especial";
-                    break;
-                case "Lax":
-                    fdef *= 1.1;
-                    fdefsp *= 0.9;
-                    notanatu = "Aumenta la Defensa Fisica y baja la Defensa Especial";
-                    break;
-                case "Lonely":
-                    fatk *= 1.1;
-                    fdef *= 0.9;
-                    notanatu = "Aumenta el Ataque fisico y baja la Defensa Fisica";
-                    break;
-                case "Mild":
-                    fatksp *= 1.1;
-                    fdef *= 0.9;
-                    notanatu = "Aumenta el Ataque Especial y baja la Defensa Fisica";
-                    break;
-                case "Modest":
-                    fatksp *= 1.1;
-                    fatk *= 0.9;
-                    notanatu = "Aumenta el Ataque Especial y baja el Ataque Fisico";
-                    break;
-                case "Naive":
-                    fvel *= 1.1;
-                    fdefsp *= 0.9;
-                    notanatu = "Aumenta la Velocidad y baja la Defensa Especial";
-                    break;
-                case "Naughty":
-                    fatk *= 1.1;
-                    fdefsp *= 0.9;
-                    notanatu = "Aumenta el Ataque Fisico y baja la Defensa Especial";
-                    break;
-                case "Quiet":
-                    fatksp *= 1.1;
-                    fvel *= 0.9;
-                    notanatu = "Aumenta el Ataque Especial y baja la Velocidad";
-                    break;
-                case "Rash":
-                    fatksp *= 1.1;
-                    fdefsp *= 0.9;
-                    notanatu = "Aumenta el Ataque Especial y baja la Defensa Especial";
-                    break;
-                case "Relaxed":
-                    fdef *= 1.1;
-                    fvel *= 0.9;
-                    notanatu = "Aumenta la Defensa Fisica y baja la Velocidad";
-                    break;
-                case "Sassy":
-                    fdefsp *= 1.1;
-                    fvel *= 0.9;
-                    notanatu = "Aumenta la Defensa Especial y baja la Velocidad";
-                    break;
-                case "Timid":
-                    fvel *= 1.1;
-                    fatk *= 0.9;
-                    notanatu = "Aumenta la Velocidad y baja el Ataque Fisico";
-                    break;
+                fps = Math.trunc(fps);
             }
         } else {
             alert("Han faltado datos o ha ingresado un dato invalido, verifique que los IVs no superen los 31 o el nivel del pokemon no supere el 100 y que ha seleccionado un Pokemon")
+        }
+        //Natulareza seleccionada
+        naturaleza = $("#naturaleza").val();
+        switch (naturaleza) {
+            case "Adamant":
+                fatk *= 1.1;
+                fatksp *= 0.9;
+                notanatu = "Aumenta el Ataque Fisico y baja el Ataque Especial";
+                break;
+            case "Bold":
+                fdef *= 1.1;
+                fatk *= 0.9;
+                notanatu = "Aumenta la Defensa Fisica y baja el Ataque Fisico";
+                break;
+            case "Brave":
+                fatk *= 1.1;
+                fvel *= 0.9;
+                notanatu = "Aumenta el Ataque fisico y baja la Velocidad";
+                break;
+            case "Calm":
+                fdefsp *= 1.1;
+                fatk *= 0.9;
+                notanatu = "Aumenta la Defensa Especial y baja el Ataque Fisico";
+                break;
+            case "Careful":
+                fdefsp *= 1.1;
+                fatksp *= 0.9;
+                notanatu = "Aumenta la Defensa Especial y baja el Ataque Especial";
+                break;
+            case "Gentle":
+                fdefsp *= 1.1;
+                fdef *= 0.9;
+                notanatu = "Aumenta la Defensa Especial y baja la Defensa Fisica";
+                break;
+            case "Hasty":
+                fvel *= 1.1;
+                fdef *= 0.9;
+                notanatu = "Aumenta la Velocidad y baja la Defensa Fisica";
+                break;
+            case "Impish":
+                fdef *= 1.1;
+                fatksp *= 0.9;
+                notanatu = "Aumenta la Defensa Fisica y baja el Ataque Especial";
+                break;
+            case "Jolly":
+                fvel *= 1.1;
+                fatksp *= 0.9;
+                notanatu = "Aumenta la Velocidad y baja el Ataque Especial";
+                break;
+            case "Lax":
+                fdef *= 1.1;
+                fdefsp *= 0.9;
+                notanatu = "Aumenta la Defensa Fisica y baja la Defensa Especial";
+                break;
+            case "Lonely":
+                fatk *= 1.1;
+                fdef *= 0.9;
+                notanatu = "Aumenta el Ataque fisico y baja la Defensa Fisica";
+                break;
+            case "Mild":
+                fatksp *= 1.1;
+                fdef *= 0.9;
+                notanatu = "Aumenta el Ataque Especial y baja la Defensa Fisica";
+                break;
+            case "Modest":
+                fatksp *= 1.1;
+                fatk *= 0.9;
+                notanatu = "Aumenta el Ataque Especial y baja el Ataque Fisico";
+                break;
+            case "Naive":
+                fvel *= 1.1;
+                fdefsp *= 0.9;
+                notanatu = "Aumenta la Velocidad y baja la Defensa Especial";
+                break;
+            case "Naughty":
+                fatk *= 1.1;
+                fdefsp *= 0.9;
+                notanatu = "Aumenta el Ataque Fisico y baja la Defensa Especial";
+                break;
+            case "Quiet":
+                fatksp *= 1.1;
+                fvel *= 0.9;
+                notanatu = "Aumenta el Ataque Especial y baja la Velocidad";
+                break;
+            case "Rash":
+                fatksp *= 1.1;
+                fdefsp *= 0.9;
+                notanatu = "Aumenta el Ataque Especial y baja la Defensa Especial";
+                break;
+            case "Relaxed":
+                fdef *= 1.1;
+                fvel *= 0.9;
+                notanatu = "Aumenta la Defensa Fisica y baja la Velocidad";
+                break;
+            case "Sassy":
+                fdefsp *= 1.1;
+                fvel *= 0.9;
+                notanatu = "Aumenta la Defensa Especial y baja la Velocidad";
+                break;
+            case "Timid":
+                fvel *= 1.1;
+                fatk *= 0.9;
+                notanatu = "Aumenta la Velocidad y baja el Ataque Fisico";
+                break;
         }
         //resultados
         $("#fps").val(fps);

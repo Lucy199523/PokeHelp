@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poke Help 1.2 - Calculadora</title>
+    <title>Poke Help 1.3 - Calculadora</title>
     <link rel="stylesheet" href="libs/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/semantic.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/calculadora.js"></script>
-
 </head>
 
 <body>
@@ -32,7 +31,7 @@
         </div>
     </div>
     <div class="ui segment" id="seg-principal">
-        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.2 - Calculadora</h2>
+        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.3 - Calculadora</h2>
         <br>
         <br>
         <div class="ui card" id="Calculadora">
@@ -47,7 +46,7 @@
                                 <div class="ui label text-input-label-0">
                                     Nivel
                                 </div>
-                                <input class="text-input-numb" type="number" max="100" value="0" id="nivel">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="100" value="0" id="nivel">
                             </div>
                             <br>
                             <br>
@@ -57,7 +56,7 @@
                                 </div>
                                 <select class="ui search selection dropdown text-input-numb-2" id="pokeselect">
                                     <option value="default">Selecciona Pokemon</option>
-                                    <option value="Bulbasaur">Bulbasaur</option>
+                                    <option value="Bulbasaur"> Bulbasaur</option>
                                     <option value="Ivysaur">Ivysaur</option>
                                     <option value="Venusaur">Venusaur</option>
                                     <option value="Charmander">Charmander</option>
@@ -208,8 +207,110 @@
                                     <option value="Dragonite">Dragonite</option>
                                     <option value="Mewtwo">Mewtwo</option>
                                     <option value="Mew">Mew</option>
+                                    <option value="Chikorita">Chikorita</option>
+                                    <option value="Bayleef">Bayleef</option>
+                                    <option value="Meganium">Meganium</option>
+                                    <option value="Cyndaquil">Cyndaquil</option>
+                                    <option value="Quilava">Quilava</option>
+                                    <option value="Typhlosion">Typhlosion</option>
+                                    <option value="Totodile">Totodile</option>
+                                    <option value="Croconaw">Croconaw</option>
+                                    <option value="Feraligatr">Feraligatr</option>
+                                    <option value="Sentret">Sentret</option>
+                                    <option value="Furret">Furret</option>
+                                    <option value="Hoothoot">Hoothoot</option>
+                                    <option value="Noctowl">Noctowl</option>
+                                    <option value="Ledyba">Ledyba</option>
+                                    <option value="Ledian">Ledian</option>
+                                    <option value="Spinarak">Spinarak</option>
+                                    <option value="Ariados">Ariados</option>
+                                    <option value="Crobat">Crobat</option>
+                                    <option value="Chinchou">Chinchou</option>
+                                    <option value="Lanturn">Lanturn</option>
+                                    <option value="Pichu">Pichu</option>
+                                    <option value="Cleffa">Cleffa</option>
+                                    <option value="Igglybuff">Igglybuff</option>
+                                    <option value="Togepi">Togepi</option>
+                                    <option value="Togetic">Togetic</option>
+                                    <option value="Natu">Natu</option>
+                                    <option value="Xatu">Xatu</option>
+                                    <option value="Mareep">Mareep</option>
+                                    <option value="Flaaffy">Flaaffy</option>
+                                    <option value="Ampharos">Ampharos</option>
+                                    <option value="Bellossom">Bellossom</option>
+                                    <option value="Marill">Marill</option>
+                                    <option value="Azumarill">Azumarill</option>
+                                    <option value="Sudowoodo">Sudowoodo</option>
+                                    <option value="Politoed">Politoed</option>
+                                    <option value="Hoppip">Hoppip</option>
+                                    <option value="Skiploom">Skiploom</option>
+                                    <option value="Jumpluff">Jumpluff</option>
+                                    <option value="Aipom">Aipom</option>
+                                    <option value="Sunkern">Sunkern</option>
+                                    <option value="Sunflora">Sunflora</option>
+                                    <option value="Yanma">Yanma</option>
+                                    <option value="Wooper">Wooper</option>
+                                    <option value="Quagsire">Quagsire</option>
+                                    <option value="Espeon">Espeon</option>
+                                    <option value="Umbreon">Umbreon</option>
+                                    <option value="Murkrow">Murkrow</option>
+                                    <option value="Slowking">Slowking</option>
+                                    <option value="Misdreavus">Misdreavus</option>
+                                    <option value="Unown">Unown</option>
+                                    <option value="Wobbuffet">Wobbuffet</option>
+                                    <option value="Girafarig">Girafarig</option>
+                                    <option value="Pineco">Pineco</option>
+                                    <option value="Forretress">Forretress</option>
+                                    <option value="Dunsparce">Dunsparce</option>
+                                    <option value="Gligar">Gligar</option>
+                                    <option value="Steelix">Steelix</option>
+                                    <option value="Snubbull">Snubbull</option>
+                                    <option value="Granbull">Granbull</option>
+                                    <option value="Qwilfish">Qwilfish</option>
+                                    <option value="Scizor">Scizor</option>
+                                    <option value="Shuckle">Shuckle</option>
+                                    <option value="Heracross">Heracross</option>
+                                    <option value="Sneasel">Sneasel</option>
+                                    <option value="Teddiursa">Teddiursa</option>
+                                    <option value="Ursaring">Ursaring</option>
+                                    <option value="Slugma">Slugma</option>
+                                    <option value="Magcargo">Magcargo</option>
+                                    <option value="Swinub">Swinub</option>
+                                    <option value="Piloswine">Piloswine</option>
+                                    <option value="Corsola">Corsola</option>
+                                    <option value="Remoraid">Remoraid</option>
+                                    <option value="Octillery">Octillery</option>
+                                    <option value="Delibird">Delibird</option>
+                                    <option value="Mantine">Mantine</option>
+                                    <option value="Skarmory">Skarmory</option>
+                                    <option value="Houndour">Houndour</option>
+                                    <option value="Houndoom">Houndoom</option>
+                                    <option value="Kingdra">Kingdra</option>
+                                    <option value="Phanpy">Phanpy</option>
+                                    <option value="Donphan">Donphan</option>
+                                    <option value="Porygon2">Porygon2</option>
+                                    <option value="Stantler">Stantler</option>
+                                    <option value="Smeargle">Smeargle</option>
+                                    <option value="Tyrogue">Tyrogue</option>
+                                    <option value="Hitmontop">Hitmontop</option>
+                                    <option value="Smoochum">Smoochum</option>
+                                    <option value="Elekid">Elekid</option>
+                                    <option value="Magby">Magby</option>
+                                    <option value="Miltank">Miltank</option>
+                                    <option value="Blissey">Blissey</option>
+                                    <option value="Raikou">Raikou</option>
+                                    <option value="Entei">Entei</option>
+                                    <option value="Suicune">Suicune</option>
+                                    <option value="Larvitar">Larvitar</option>
+                                    <option value="Pupitar">Pupitar</option>
+                                    <option value="Tyranitar">Tyranitar</option>
+                                    <option value="Lugia">Lugia</option>
+                                    <option value="Ho-Oh">Ho-Oh</option>
+                                    <option value="Celebi">Celebi</option>
+                                    
                                     <option value="Klefki">Klefki</option>
                                 </select>
+                                
                             </div>
                             <br>
                             <br>
@@ -249,43 +350,44 @@
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
-                                    Ingrese el IVs PS
+                                    Ingrese el IV ATK
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="ivps">
-                            </div>
-
-                            <br>
-                            <div class="ui labeled input">
-                                <div class="ui label text-input-label-1">
-                                    Ingrese el IVs Atk
-                                </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="ivatk">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
-                                    Ingrese el IVs Def
+                                    Ingrese el IV DEF
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="ivdef">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
-                                    Ingrese el IVs AtkSp
+                                    Ingrese el IV SPD
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="ivatksp">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivvel">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
-                                    Ingrese el IVs DefSp
+                                    Ingrese el IV SPATK
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="ivdefsp">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
-                                <div class="ui label text-input-label-1">Ingrese el IVs Vel</div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="ivvel">
+                                <div class="ui label text-input-label-1">
+                                    Ingrese el IV SPDEF
+                                </div>
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivdefsp">
+                            </div>
+                            <br>
+                            <div class="ui labeled input">
+                                <div class="ui label text-input-label-1">
+                                    Ingrese el IV HP
+                                </div>
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivps">
                             </div>
                             <br>
                         </div>
@@ -294,44 +396,44 @@
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
-                                    Ingrese el EVs PS
+                                    Ingrese el EV ATK
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="evps">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
-                                    Ingrese el EVs Atk
+                                    Ingrese el EV DEF
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="evatk">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
-                                    Ingrese el EVs Def
+                                    Ingrese el EV SPD
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="evdef">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evvel">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
-                                    Ingrese el EVs AtkSp
+                                    Ingrese el EV SPATK
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="evatksp">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
-                                    Ingrese el EVs DefSp
+                                    Ingrese el EV SPDEF
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="evdefsp">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
-                                    Ingrese el EVs Vel
+                                    Ingrese el EV HP
                                 </div>
-                                <input class="text-input-numb" type="number" max="31" value="0" id="evvel">
+                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evps">
                             </div>
                             <br>
                         </div>
@@ -340,44 +442,44 @@
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-3">
-                                    PS Total
+                                    ATK Total
                                 </div>
-                                <input class="text-input-numb" type="number" disabled placeholder="PS" id="fps">
+                                <input class="text-input-numb" type="number" disabled placeholder="ATK" id="fatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-3">
-                                    Atk Total
+                                    DEF Total
                                 </div>
-                                <input class="text-input-numb" type="number" disabled placeholder="Atk" id="fatk">
+                                <input class="text-input-numb" type="number" disabled placeholder="DEF" id="fdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-3">
-                                    Def Total
+                                    SPD Total
                                 </div>
-                                <input class="text-input-numb" type="number" disabled placeholder="Def" id="fdef">
+                                <input class="text-input-numb" type="number" disabled placeholder="SPD" id="fvel">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-3">
-                                    AtkSp Total
+                                    SPATK Total
                                 </div>
-                                <input class="text-input-numb" type="number" disabled placeholder="AtkSp" id="fatksp">
+                                <input class="text-input-numb" type="number" disabled placeholder="SPATK" id="fatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-3">
-                                    DefSp Total
+                                    SPDEF Total
                                 </div>
-                                <input class="text-input-numb" type="number" disabled placeholder="DefSp" id="fdefsp">
+                                <input class="text-input-numb" type="number" disabled placeholder="SPDEF" id="fdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-3">
-                                    Vel Total
+                                    HP Total
                                 </div>
-                                <input class="text-input-numb" type="number" disabled placeholder="Vel" id="fvel">
+                                <input class="text-input-numb" type="number" disabled placeholder="HP" id="fps">
                             </div>
                             <br>
                         </div>
