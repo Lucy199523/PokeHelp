@@ -1255,6 +1255,14 @@ $(document).ready(function () {
                 defsp = 100;
                 vel = 100;
                 break;
+            case "Klefki":
+                ps = 57;
+                atk = 80;
+                def = 91;
+                atksp = 80;
+                defsp = 87;
+                vel = 75;
+                break;
             default:
                 ps = null;
                 atk = null;
@@ -1273,6 +1281,38 @@ $(document).ready(function () {
             fatksp = (((ivatksp + 2 * atksp + (evatksp / 4)) * nivel / 100) + 5);
             fdefsp = (((ivdefsp + 2 * defsp + (evdefsp / 4)) * nivel / 100) + 5);
             fps = ((ivps + 2 * ps + (evps / 4)) * nivel / 100) + 10 + nivel;
+
+            //correccion de decimales
+            if (fatk-(Math.trunc(fatk))>=0.9) {
+                fatk=Math.trunc(fatk)+1;
+            } else {
+                fatk=Math.trunc(fatk);
+            }
+            if (fdef-(Math.trunc(fdef))>=0.9) {
+                fdef=Math.trunc(fdef)+1;
+            } else {
+                fdef=Math.trunc(fdef);
+            }
+            if (fvel-(Math.trunc(fvel))>=0.9) {
+                fvel=Math.trunc(fvel)+1;
+            } else {
+                fvel=Math.trunc(fvel);
+            }
+            if (fatksp-(Math.trunc(fatksp))>=0.9) {
+                fatksp=Math.trunc(fatksp)+1;
+            } else {
+                fatksp=Math.trunc(fatksp);
+            }
+            if (fdefsp-(Math.trunc(fdefsp))>=0.9) {
+                fdefsp=Math.trunc(fdefsp)+1;
+            } else {
+                fdefsp=Math.trunc(fdefsp);
+            }
+            if (fps-(Math.trunc(fps))>=0.9) {
+                fps=Math.trunc(fps)+1;
+            } else {
+                fps=Math.trunc(fps);
+            }
 
             //Natulareza seleccionada
             naturaleza = $("#naturaleza").val();
@@ -1379,15 +1419,15 @@ $(document).ready(function () {
                     break;
             }
         } else {
-            alert("Han faltado datos o ha ingresado un dato invalido, verifique que los IVs no superen los 31 o el nivel no supere el 100 y que ha seleccionado un Pokemon")
+            alert("Han faltado datos o ha ingresado un dato invalido, verifique que los IVs no superen los 31 o el nivel del pokemon no supere el 100 y que ha seleccionado un Pokemon")
         }
         //resultados
-        $("#fps").val(Math.round(fps));
-        $("#fdef").val(Math.round(fdef));
-        $("#fvel").val(Math.round(fvel));
-        $("#fatksp").val(Math.round(fatksp));
-        $("#fdefsp").val(Math.round(fdefsp));
-        $("#fatk").val(Math.round(fatk));
+        $("#fps").val(fps);
+        $("#fdef").val(fdef);
+        $("#fvel").val(fvel);
+        $("#fatksp").val(fatksp);
+        $("#fdefsp").val(fdefsp);
+        $("#fatk").val(fatk);
     });
 
 });
