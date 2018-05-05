@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poke Help 1.3 - Calculadora</title>
+    <title>Poke Help 0.0.6 - Calculadora</title>
     <link rel="stylesheet" href="libs/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="libs/jquery-3.3.1.min.js"></script>
@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="ui segment" id="seg-principal">
-        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 1.3 - Calculadora</h2>
+        <h2 id="seg-principal-titulo" class="ui header blue dividing">PokeHelp 0.0.6 - Calculadora</h2>
         <br>
         <br>
         <div class="ui card" id="Calculadora">
@@ -46,7 +46,8 @@
                                 <div class="ui label text-input-label-0">
                                     Nivel
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="100" value="0" id="nivel">
+                                <input class="text-input-numb nvlpkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="100" value="0" id="nivel">
                             </div>
                             <br>
                             <br>
@@ -54,263 +55,1175 @@
                                 <div class="ui label text-input-label-0">
                                     Pokemon
                                 </div>
-                                <select class="ui search selection dropdown text-input-numb-2" id="pokeselect">
-                                    <option value="default">Selecciona Pokemon</option>
-                                    <option value="Bulbasaur"> Bulbasaur</option>
-                                    <option value="Ivysaur">Ivysaur</option>
-                                    <option value="Venusaur">Venusaur</option>
-                                    <option value="Charmander">Charmander</option>
-                                    <option value="Charmeleon">Charmeleon</option>
-                                    <option value="Charizard">Charizard</option>
-                                    <option value="Squirtle">Squirtle</option>
-                                    <option value="Wartortle">Wartortle</option>
-                                    <option value="Blastoise">Blastoise</option>
-                                    <option value="Caterpie">Caterpie</option>
-                                    <option value="Metapod">Metapod</option>
-                                    <option value="Butterfree">Butterfree</option>
-                                    <option value="Weedle">Weedle</option>
-                                    <option value="Kakuna">Kakuna</option>
-                                    <option value="Beedrill">Beedrill</option>
-                                    <option value="Pidgey">Pidgey</option>
-                                    <option value="Pidgeotto">Pidgeotto</option>
-                                    <option value="Pidgeot">Pidgeot</option>
-                                    <option value="Rattata">Rattata</option>
-                                    <option value="Raticate">Raticate</option>
-                                    <option value="Spearow">Spearow</option>
-                                    <option value="Fearow">Fearow</option>
-                                    <option value="Ekans">Ekans</option>
-                                    <option value="Arbok">Arbok</option>
-                                    <option value="Pikachu">Pikachu</option>
-                                    <option value="Raichu">Raichu</option>
-                                    <option value="Sandshrew">Sandshrew</option>
-                                    <option value="Sandslash">Sandslash</option>
-                                    <option value="Nidoran♀">Nidoran♀</option>
-                                    <option value="Nidorina">Nidorina</option>
-                                    <option value="Nidoqueen">Nidoqueen</option>
-                                    <option value="Nidoran♂">Nidoran♂</option>
-                                    <option value="Nidorino">Nidorino</option>
-                                    <option value="Nidoking">Nidoking</option>
-                                    <option value="Clefairy">Clefairy</option>
-                                    <option value="Clefable">Clefable</option>
-                                    <option value="Vulpix">Vulpix</option>
-                                    <option value="Ninetales">Ninetales</option>
-                                    <option value="Jigglypuff">Jigglypuff</option>
-                                    <option value="Wigglytuff">Wigglytuff</option>
-                                    <option value="Zubat">Zubat</option>
-                                    <option value="Golbat">Golbat</option>
-                                    <option value="Oddish">Oddish</option>
-                                    <option value="Gloom">Gloom</option>
-                                    <option value="Vileplume">Vileplume</option>
-                                    <option value="Paras">Paras</option>
-                                    <option value="Parasect">Parasect</option>
-                                    <option value="Venonat">Venonat</option>
-                                    <option value="Venomoth">Venomoth</option>
-                                    <option value="Diglett">Diglett</option>
-                                    <option value="Dugtrio">Dugtrio</option>
-                                    <option value="Meowth">Meowth</option>
-                                    <option value="Persian">Persian</option>
-                                    <option value="Psyduck">Psyduck</option>
-                                    <option value="Golduck">Golduck</option>
-                                    <option value="Mankey">Mankey</option>
-                                    <option value="Primeape">Primeape</option>
-                                    <option value="Growlithe">Growlithe</option>
-                                    <option value="Arcanine">Arcanine</option>
-                                    <option value="Poliwag">Poliwag</option>
-                                    <option value="Poliwhirl">Poliwhirl</option>
-                                    <option value="Poliwrath">Poliwrath</option>
-                                    <option value="Abra">Abra</option>
-                                    <option value="Kadabra">Kadabra</option>
-                                    <option value="Alakazam">Alakazam</option>
-                                    <option value="Machop">Machop</option>
-                                    <option value="Machoke">Machoke</option>
-                                    <option value="Machamp">Machamp</option>
-                                    <option value="Bellsprout">Bellsprout</option>
-                                    <option value="Weepinbell">Weepinbell</option>
-                                    <option value="Victreebel">Victreebel</option>
-                                    <option value="Tentacool">Tentacool</option>
-                                    <option value="Tentacruel">Tentacruel</option>
-                                    <option value="Geodude">Geodude</option>
-                                    <option value="Graveler">Graveler</option>
-                                    <option value="Golem">Golem</option>
-                                    <option value="Ponyta">Ponyta</option>
-                                    <option value="Rapidash">Rapidash</option>
-                                    <option value="Slowpoke">Slowpoke</option>
-                                    <option value="Slowbro">Slowbro</option>
-                                    <option value="Magnemite">Magnemite</option>
-                                    <option value="Magneton">Magneton</option>
-                                    <option value="Farfetch'd">Farfetch'd</option>
-                                    <option value="Doduo">Doduo</option>
-                                    <option value="Dodrio">Dodrio</option>
-                                    <option value="Seel">Seel</option>
-                                    <option value="Dewgong">Dewgong</option>
-                                    <option value="Grimer">Grimer</option>
-                                    <option value="Muk">Muk</option>
-                                    <option value="Shellder">Shellder</option>
-                                    <option value="Cloyster">Cloyster</option>
-                                    <option value="Gastly">Gastly</option>
-                                    <option value="Haunter">Haunter</option>
-                                    <option value="Gengar">Gengar</option>
-                                    <option value="Onix">Onix</option>
-                                    <option value="Drowzee">Drowzee</option>
-                                    <option value="Hypno">Hypno</option>
-                                    <option value="Krabby">Krabby</option>
-                                    <option value="Kingler">Kingler</option>
-                                    <option value="Voltorb">Voltorb</option>
-                                    <option value="Electrode">Electrode</option>
-                                    <option value="Exeggcute">Exeggcute</option>
-                                    <option value="Exeggutor">Exeggutor</option>
-                                    <option value="Cubone">Cubone</option>
-                                    <option value="Marowak">Marowak</option>
-                                    <option value="Hitmonlee">Hitmonlee</option>
-                                    <option value="Hitmonchan">Hitmonchan</option>
-                                    <option value="Lickitung">Lickitung</option>
-                                    <option value="Koffing">Koffing</option>
-                                    <option value="Weezing">Weezing</option>
-                                    <option value="Rhyhorn">Rhyhorn</option>
-                                    <option value="Rhydon">Rhydon</option>
-                                    <option value="Chansey">Chansey</option>
-                                    <option value="Tangela">Tangela</option>
-                                    <option value="Kangaskhan">Kangaskhan</option>
-                                    <option value="Horsea">Horsea</option>
-                                    <option value="Seadra">Seadra</option>
-                                    <option value="Goldeen">Goldeen</option>
-                                    <option value="Seaking">Seaking</option>
-                                    <option value="Staryu">Staryu</option>
-                                    <option value="Starmie">Starmie</option>
-                                    <option value="Mr. Mime">Mr. Mime</option>
-                                    <option value="Scyther">Scyther</option>
-                                    <option value="Jynx">Jynx</option>
-                                    <option value="Electabuzz">Electabuzz</option>
-                                    <option value="Magmar">Magmar</option>
-                                    <option value="Pinsir">Pinsir</option>
-                                    <option value="Tauros">Tauros</option>
-                                    <option value="Magikarp">Magikarp</option>
-                                    <option value="Gyarados">Gyarados</option>
-                                    <option value="Lapras">Lapras</option>
-                                    <option value="Ditto">Ditto</option>
-                                    <option value="Eevee">Eevee</option>
-                                    <option value="Vaporeon">Vaporeon</option>
-                                    <option value="Jolteon">Jolteon</option>
-                                    <option value="Flareon">Flareon</option>
-                                    <option value="Porygon">Porygon</option>
-                                    <option value="Omanyte">Omanyte</option>
-                                    <option value="Omastar">Omastar</option>
-                                    <option value="Kabuto">Kabuto</option>
-                                    <option value="Kabutops">Kabutops</option>
-                                    <option value="Aerodactyl">Aerodactyl</option>
-                                    <option value="Snorlax">Snorlax</option>
-                                    <option value="Articuno">Articuno</option>
-                                    <option value="Zapdos">Zapdos</option>
-                                    <option value="Moltres">Moltres</option>
-                                    <option value="Dratini">Dratini</option>
-                                    <option value="Dragonair">Dragonair</option>
-                                    <option value="Dragonite">Dragonite</option>
-                                    <option value="Mewtwo">Mewtwo</option>
-                                    <option value="Mew">Mew</option>
-                                    <option value="Chikorita">Chikorita</option>
-                                    <option value="Bayleef">Bayleef</option>
-                                    <option value="Meganium">Meganium</option>
-                                    <option value="Cyndaquil">Cyndaquil</option>
-                                    <option value="Quilava">Quilava</option>
-                                    <option value="Typhlosion">Typhlosion</option>
-                                    <option value="Totodile">Totodile</option>
-                                    <option value="Croconaw">Croconaw</option>
-                                    <option value="Feraligatr">Feraligatr</option>
-                                    <option value="Sentret">Sentret</option>
-                                    <option value="Furret">Furret</option>
-                                    <option value="Hoothoot">Hoothoot</option>
-                                    <option value="Noctowl">Noctowl</option>
-                                    <option value="Ledyba">Ledyba</option>
-                                    <option value="Ledian">Ledian</option>
-                                    <option value="Spinarak">Spinarak</option>
-                                    <option value="Ariados">Ariados</option>
-                                    <option value="Crobat">Crobat</option>
-                                    <option value="Chinchou">Chinchou</option>
-                                    <option value="Lanturn">Lanturn</option>
-                                    <option value="Pichu">Pichu</option>
-                                    <option value="Cleffa">Cleffa</option>
-                                    <option value="Igglybuff">Igglybuff</option>
-                                    <option value="Togepi">Togepi</option>
-                                    <option value="Togetic">Togetic</option>
-                                    <option value="Natu">Natu</option>
-                                    <option value="Xatu">Xatu</option>
-                                    <option value="Mareep">Mareep</option>
-                                    <option value="Flaaffy">Flaaffy</option>
-                                    <option value="Ampharos">Ampharos</option>
-                                    <option value="Bellossom">Bellossom</option>
-                                    <option value="Marill">Marill</option>
-                                    <option value="Azumarill">Azumarill</option>
-                                    <option value="Sudowoodo">Sudowoodo</option>
-                                    <option value="Politoed">Politoed</option>
-                                    <option value="Hoppip">Hoppip</option>
-                                    <option value="Skiploom">Skiploom</option>
-                                    <option value="Jumpluff">Jumpluff</option>
-                                    <option value="Aipom">Aipom</option>
-                                    <option value="Sunkern">Sunkern</option>
-                                    <option value="Sunflora">Sunflora</option>
-                                    <option value="Yanma">Yanma</option>
-                                    <option value="Wooper">Wooper</option>
-                                    <option value="Quagsire">Quagsire</option>
-                                    <option value="Espeon">Espeon</option>
-                                    <option value="Umbreon">Umbreon</option>
-                                    <option value="Murkrow">Murkrow</option>
-                                    <option value="Slowking">Slowking</option>
-                                    <option value="Misdreavus">Misdreavus</option>
-                                    <option value="Unown">Unown</option>
-                                    <option value="Wobbuffet">Wobbuffet</option>
-                                    <option value="Girafarig">Girafarig</option>
-                                    <option value="Pineco">Pineco</option>
-                                    <option value="Forretress">Forretress</option>
-                                    <option value="Dunsparce">Dunsparce</option>
-                                    <option value="Gligar">Gligar</option>
-                                    <option value="Steelix">Steelix</option>
-                                    <option value="Snubbull">Snubbull</option>
-                                    <option value="Granbull">Granbull</option>
-                                    <option value="Qwilfish">Qwilfish</option>
-                                    <option value="Scizor">Scizor</option>
-                                    <option value="Shuckle">Shuckle</option>
-                                    <option value="Heracross">Heracross</option>
-                                    <option value="Sneasel">Sneasel</option>
-                                    <option value="Teddiursa">Teddiursa</option>
-                                    <option value="Ursaring">Ursaring</option>
-                                    <option value="Slugma">Slugma</option>
-                                    <option value="Magcargo">Magcargo</option>
-                                    <option value="Swinub">Swinub</option>
-                                    <option value="Piloswine">Piloswine</option>
-                                    <option value="Corsola">Corsola</option>
-                                    <option value="Remoraid">Remoraid</option>
-                                    <option value="Octillery">Octillery</option>
-                                    <option value="Delibird">Delibird</option>
-                                    <option value="Mantine">Mantine</option>
-                                    <option value="Skarmory">Skarmory</option>
-                                    <option value="Houndour">Houndour</option>
-                                    <option value="Houndoom">Houndoom</option>
-                                    <option value="Kingdra">Kingdra</option>
-                                    <option value="Phanpy">Phanpy</option>
-                                    <option value="Donphan">Donphan</option>
-                                    <option value="Porygon2">Porygon2</option>
-                                    <option value="Stantler">Stantler</option>
-                                    <option value="Smeargle">Smeargle</option>
-                                    <option value="Tyrogue">Tyrogue</option>
-                                    <option value="Hitmontop">Hitmontop</option>
-                                    <option value="Smoochum">Smoochum</option>
-                                    <option value="Elekid">Elekid</option>
-                                    <option value="Magby">Magby</option>
-                                    <option value="Miltank">Miltank</option>
-                                    <option value="Blissey">Blissey</option>
-                                    <option value="Raikou">Raikou</option>
-                                    <option value="Entei">Entei</option>
-                                    <option value="Suicune">Suicune</option>
-                                    <option value="Larvitar">Larvitar</option>
-                                    <option value="Pupitar">Pupitar</option>
-                                    <option value="Tyranitar">Tyranitar</option>
-                                    <option value="Lugia">Lugia</option>
-                                    <option value="Ho-Oh">Ho-Oh</option>
-                                    <option value="Celebi">Celebi</option>
-                                    
-                                    <option value="Klefki">Klefki</option>
-                                </select>
-                                
+                                <div class="ui fluid search selection dropdown text-input-numb-2">
+                                    <input type="hidden" name="pokemon" id="pokeselect">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Selecciona Pokemon</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="Bulbasaur">
+                                            <img class="pkmn-img" src="img/calc/001MS.png">Bulbasaur
+                                        </div>
+                                        <div class="item" data-value="Ivysaur">
+                                            <img class="pkmn-img" src="img/calc/002MS.png">Ivysaur
+                                        </div>
+                                        <div class="item" data-value="Venusaur">
+                                            <img class="pkmn-img" src="img/calc/003MS.png">Venusaur
+                                        </div>
+                                        <div class="item" data-value="Charmander">
+                                            <img class="pkmn-img" src="img/calc/004MS.png">Charmander
+                                        </div>
+                                        <div class="item" data-value="Charmeleon">
+                                            <img class="pkmn-img" src="img/calc/005MS.png">Charmeleon
+                                        </div>
+                                        <div class="item" data-value="Charizard">
+                                            <img class="pkmn-img" src="img/calc/006MS.png">Charizard
+                                        </div>
+                                        <div class="item" data-value="Squirtle">
+                                            <img class="pkmn-img" src="img/calc/007MS.png">Squirtle
+                                        </div>
+                                        <div class="item" data-value="Wartortle">
+                                            <img class="pkmn-img" src="img/calc/008MS.png">Wartortle
+                                        </div>
+                                        <div class="item" data-value="Blastoise">
+                                            <img class="pkmn-img" src="img/calc/009MS.png">Blastoise
+                                        </div>
+                                        <div class="item" data-value="Caterpie">
+                                            <img class="pkmn-img" src="img/calc/010MS.png">Caterpie
+                                        </div>
+                                        <div class="item" data-value="Metapod">
+                                            <img class="pkmn-img" src="img/calc/011MS.png">Metapod
+                                        </div>
+                                        <div class="item" data-value="Butterfree">
+                                            <img class="pkmn-img" src="img/calc/012MS.png">Butterfree
+                                        </div>
+                                        <div class="item" data-value="Weedle">
+                                            <img class="pkmn-img" src="img/calc/013MS.png">Weedle
+                                        </div>
+                                        <div class="item" data-value="Kakuna">
+                                            <img class="pkmn-img" src="img/calc/014MS.png">Kakuna
+                                        </div>
+                                        <div class="item" data-value="Beedrill">
+                                            <img class="pkmn-img" src="img/calc/015MS.png">Beedrill
+                                        </div>
+                                        <div class="item" data-value="Pidgey">
+                                            <img class="pkmn-img" src="img/calc/016MS.png">Pidgey
+                                        </div>
+                                        <div class="item" data-value="Pidgeotto">
+                                            <img class="pkmn-img" src="img/calc/017MS.png">Pidgeotto
+                                        </div>
+                                        <div class="item" data-value="Pidgeot">
+                                            <img class="pkmn-img" src="img/calc/018MS.png">Pidgeot
+                                        </div>
+                                        <div class="item" data-value="Rattata">
+                                            <img class="pkmn-img" src="img/calc/019MS.png">Rattata
+                                        </div>
+                                        <div class="item" data-value="Raticate">
+                                            <img class="pkmn-img" src="img/calc/020MS.png">Raticate
+                                        </div>
+                                        <div class="item" data-value="Spearow">
+                                            <img class="pkmn-img" src="img/calc/021MS.png">Spearow
+                                        </div>
+                                        <div class="item" data-value="Fearow">
+                                            <img class="pkmn-img" src="img/calc/022MS.png">Fearow
+                                        </div>
+                                        <div class="item" data-value="Ekans">
+                                            <img class="pkmn-img" src="img/calc/023MS.png">Ekans
+                                        </div>
+                                        <div class="item" data-value="Arbok">
+                                            <img class="pkmn-img" src="img/calc/024MS.png">Arbok
+                                        </div>
+                                        <div class="item" data-value="Pikachu">
+                                            <img class="pkmn-img" src="img/calc/025MS.png">Pikachu
+                                        </div>
+                                        <div class="item" data-value="Raichu">
+                                            <img class="pkmn-img" src="img/calc/026MS.png">Raichu
+                                        </div>
+                                        <div class="item" data-value="Sandshrew">
+                                            <img class="pkmn-img" src="img/calc/027MS.png">Sandshrew
+                                        </div>
+                                        <div class="item" data-value="Sandslash">
+                                            <img class="pkmn-img" src="img/calc/028MS.png">Sandslash
+                                        </div>
+                                        <div class="item" data-value="Nidoran♀">
+                                            <img class="pkmn-img" src="img/calc/029MS.png">Nidoran♀
+                                        </div>
+                                        <div class="item" data-value="Nidorina">
+                                            <img class="pkmn-img" src="img/calc/030MS.png">Nidorina
+                                        </div>
+                                        <div class="item" data-value="Nidoqueen">
+                                            <img class="pkmn-img" src="img/calc/031MS.png">Nidoqueen
+                                        </div>
+                                        <div class="item" data-value="Nidoran♂">
+                                            <img class="pkmn-img" src="img/calc/032MS.png">Nidoran♂
+                                        </div>
+                                        <div class="item" data-value="Nidorino">
+                                            <img class="pkmn-img" src="img/calc/033MS.png">Nidorino
+                                        </div>
+                                        <div class="item" data-value="Nidoking">
+                                            <img class="pkmn-img" src="img/calc/034MS.png">Nidoking
+                                        </div>
+                                        <div class="item" data-value="Clefairy">
+                                            <img class="pkmn-img" src="img/calc/035MS.png">Clefairy
+                                        </div>
+                                        <div class="item" data-value="Clefable">
+                                            <img class="pkmn-img" src="img/calc/036MS.png">Clefable
+                                        </div>
+                                        <div class="item" data-value="Vulpix">
+                                            <img class="pkmn-img" src="img/calc/037MS.png">Vulpix
+                                        </div>
+                                        <div class="item" data-value="Ninetales">
+                                            <img class="pkmn-img" src="img/calc/038MS.png">Ninetales
+                                        </div>
+                                        <div class="item" data-value="Jigglypuff">
+                                            <img class="pkmn-img" src="img/calc/039MS.png">Jigglypuff
+                                        </div>
+                                        <div class="item" data-value="Wigglytuff">
+                                            <img class="pkmn-img" src="img/calc/040MS.png">Wigglytuff
+                                        </div>
+                                        <div class="item" data-value="Zubat">
+                                            <img class="pkmn-img" src="img/calc/041MS.png">Zubat
+                                        </div>
+                                        <div class="item" data-value="Golbat">
+                                            <img class="pkmn-img" src="img/calc/042MS.png">Golbat
+                                        </div>
+                                        <div class="item" data-value="Oddish">
+                                            <img class="pkmn-img" src="img/calc/043MS.png">Oddish
+                                        </div>
+                                        <div class="item" data-value="Gloom">
+                                            <img class="pkmn-img" src="img/calc/044MS.png">Gloom
+                                        </div>
+                                        <div class="item" data-value="Vileplume">
+                                            <img class="pkmn-img" src="img/calc/045MS.png">Vileplume
+                                        </div>
+                                        <div class="item" data-value="Paras">
+                                            <img class="pkmn-img" src="img/calc/046MS.png">Paras
+                                        </div>
+                                        <div class="item" data-value="Parasect">
+                                            <img class="pkmn-img" src="img/calc/047MS.png">Parasect
+                                        </div>
+                                        <div class="item" data-value="Venonat">
+                                            <img class="pkmn-img" src="img/calc/048MS.png">Venonat
+                                        </div>
+                                        <div class="item" data-value="Venomoth">
+                                            <img class="pkmn-img" src="img/calc/049MS.png">Venomoth
+                                        </div>
+                                        <div class="item" data-value="Diglett">
+                                            <img class="pkmn-img" src="img/calc/050MS.png">Diglett
+                                        </div>
+                                        <div class="item" data-value="Dugtrio">
+                                            <img class="pkmn-img" src="img/calc/051MS.png">Dugtrio
+                                        </div>
+                                        <div class="item" data-value="Meowth">
+                                            <img class="pkmn-img" src="img/calc/052MS.png">Meowth
+                                        </div>
+                                        <div class="item" data-value="Persian">
+                                            <img class="pkmn-img" src="img/calc/053MS.png">Persian
+                                        </div>
+                                        <div class="item" data-value="Psyduck">
+                                            <img class="pkmn-img" src="img/calc/054MS.png">Psyduck
+                                        </div>
+                                        <div class="item" data-value="Golduck">
+                                            <img class="pkmn-img" src="img/calc/055MS.png">Golduck
+                                        </div>
+                                        <div class="item" data-value="Mankey">
+                                            <img class="pkmn-img" src="img/calc/056MS.png">Mankey
+                                        </div>
+                                        <div class="item" data-value="Primeape">
+                                            <img class="pkmn-img" src="img/calc/057MS.png">Primeape
+                                        </div>
+                                        <div class="item" data-value="Growlithe">
+                                            <img class="pkmn-img" src="img/calc/058MS.png">Growlithe
+                                        </div>
+                                        <div class="item" data-value="Arcanine">
+                                            <img class="pkmn-img" src="img/calc/059MS.png">Arcanine
+                                        </div>
+                                        <div class="item" data-value="Poliwag">
+                                            <img class="pkmn-img" src="img/calc/060MS.png">Poliwag
+                                        </div>
+                                        <div class="item" data-value="Poliwhirl">
+                                            <img class="pkmn-img" src="img/calc/061MS.png">Poliwhirl
+                                        </div>
+                                        <div class="item" data-value="Poliwrath">
+                                            <img class="pkmn-img" src="img/calc/062MS.png">Poliwrath
+                                        </div>
+                                        <div class="item" data-value="Abra">
+                                            <img class="pkmn-img" src="img/calc/063MS.png">Abra
+                                        </div>
+                                        <div class="item" data-value="Kadabra">
+                                            <img class="pkmn-img" src="img/calc/064MS.png">Kadabra
+                                        </div>
+                                        <div class="item" data-value="Alakazam">
+                                            <img class="pkmn-img" src="img/calc/065MS.png">Alakazam
+                                        </div>
+                                        <div class="item" data-value="Machop">
+                                            <img class="pkmn-img" src="img/calc/066MS.png">Machop
+                                        </div>
+                                        <div class="item" data-value="Machoke">
+                                            <img class="pkmn-img" src="img/calc/067MS.png">Machoke
+                                        </div>
+                                        <div class="item" data-value="Machamp">
+                                            <img class="pkmn-img" src="img/calc/068MS.png">Machamp
+                                        </div>
+                                        <div class="item" data-value="Bellsprout">
+                                            <img class="pkmn-img" src="img/calc/069MS.png">Bellsprout
+                                        </div>
+                                        <div class="item" data-value="Weepinbell">
+                                            <img class="pkmn-img" src="img/calc/070MS.png">Weepinbell
+                                        </div>
+                                        <div class="item" data-value="Victreebel">
+                                            <img class="pkmn-img" src="img/calc/071MS.png">Victreebel
+                                        </div>
+                                        <div class="item" data-value="Tentacool">
+                                            <img class="pkmn-img" src="img/calc/072MS.png">Tentacool
+                                        </div>
+                                        <div class="item" data-value="Tentacruel">
+                                            <img class="pkmn-img" src="img/calc/073MS.png">Tentacruel
+                                        </div>
+                                        <div class="item" data-value="Geodude">
+                                            <img class="pkmn-img" src="img/calc/074MS.png">Geodude
+                                        </div>
+                                        <div class="item" data-value="Graveler">
+                                            <img class="pkmn-img" src="img/calc/075MS.png">Graveler
+                                        </div>
+                                        <div class="item" data-value="Golem">
+                                            <img class="pkmn-img" src="img/calc/076MS.png">Golem
+                                        </div>
+                                        <div class="item" data-value="Ponyta">
+                                            <img class="pkmn-img" src="img/calc/077MS.png">Ponyta
+                                        </div>
+                                        <div class="item" data-value="Rapidash">
+                                            <img class="pkmn-img" src="img/calc/078MS.png">Rapidash
+                                        </div>
+                                        <div class="item" data-value="Slowpoke">
+                                            <img class="pkmn-img" src="img/calc/079MS.png">Slowpoke
+                                        </div>
+                                        <div class="item" data-value="Slowbro">
+                                            <img class="pkmn-img" src="img/calc/080MS.png">Slowbro
+                                        </div>
+                                        <div class="item" data-value="Magnemite">
+                                            <img class="pkmn-img" src="img/calc/081MS.png">Magnemite
+                                        </div>
+                                        <div class="item" data-value="Magneton">
+                                            <img class="pkmn-img" src="img/calc/082MS.png">Magneton
+                                        </div>
+                                        <div class="item" data-value="Farfetch'd">
+                                            <img class="pkmn-img" src="img/calc/083MS.png">Farfetch'd
+                                        </div>
+                                        <div class="item" data-value="Doduo">
+                                            <img class="pkmn-img" src="img/calc/084MS.png">Doduo
+                                        </div>
+                                        <div class="item" data-value="Dodrio">
+                                            <img class="pkmn-img" src="img/calc/085MS.png">Dodrio
+                                        </div>
+                                        <div class="item" data-value="Seel">
+                                            <img class="pkmn-img" src="img/calc/086MS.png">Seel
+                                        </div>
+                                        <div class="item" data-value="Dewgong">
+                                            <img class="pkmn-img" src="img/calc/087MS.png">Dewgong
+                                        </div>
+                                        <div class="item" data-value="Grimer">
+                                            <img class="pkmn-img" src="img/calc/088MS.png">Grimer
+                                        </div>
+                                        <div class="item" data-value="Muk">
+                                            <img class="pkmn-img" src="img/calc/089MS.png">Muk
+                                        </div>
+                                        <div class="item" data-value="Shellder">
+                                            <img class="pkmn-img" src="img/calc/090MS.png">Shellder
+                                        </div>
+                                        <div class="item" data-value="Cloyster">
+                                            <img class="pkmn-img" src="img/calc/091MS.png">Cloyster
+                                        </div>
+                                        <div class="item" data-value="Gastly">
+                                            <img class="pkmn-img" src="img/calc/092MS.png">Gastly
+                                        </div>
+                                        <div class="item" data-value="Haunter">
+                                            <img class="pkmn-img" src="img/calc/093MS.png">Haunter
+                                        </div>
+                                        <div class="item" data-value="Gengar">
+                                            <img class="pkmn-img" src="img/calc/094MS.png">Gengar
+                                        </div>
+                                        <div class="item" data-value="Onix">
+                                            <img class="pkmn-img" src="img/calc/095MS.png">Onix
+                                        </div>
+                                        <div class="item" data-value="Drowzee">
+                                            <img class="pkmn-img" src="img/calc/096MS.png">Drowzee
+                                        </div>
+                                        <div class="item" data-value="Hypno">
+                                            <img class="pkmn-img" src="img/calc/097MS.png">Hypno
+                                        </div>
+                                        <div class="item" data-value="Krabby">
+                                            <img class="pkmn-img" src="img/calc/098MS.png">Krabby
+                                        </div>
+                                        <div class="item" data-value="Kingler">
+                                            <img class="pkmn-img" src="img/calc/099MS.png">Kingler
+                                        </div>
+                                        <div class="item" data-value="Voltorb">
+                                            <img class="pkmn-img" src="img/calc/100MS.png">Voltorb
+                                        </div>
+                                        <div class="item" data-value="Electrode">
+                                            <img class="pkmn-img" src="img/calc/101MS.png">Electrode
+                                        </div>
+                                        <div class="item" data-value="Exeggcute">
+                                            <img class="pkmn-img" src="img/calc/102MS.png">Exeggcute
+                                        </div>
+                                        <div class="item" data-value="Exeggutor">
+                                            <img class="pkmn-img" src="img/calc/103MS.png">Exeggutor
+                                        </div>
+                                        <div class="item" data-value="Cubone">
+                                            <img class="pkmn-img" src="img/calc/104MS.png">Cubone
+                                        </div>
+                                        <div class="item" data-value="Marowak">
+                                            <img class="pkmn-img" src="img/calc/105MS.png">Marowak
+                                        </div>
+                                        <div class="item" data-value="Hitmonlee">
+                                            <img class="pkmn-img" src="img/calc/106MS.png">Hitmonlee
+                                        </div>
+                                        <div class="item" data-value="Hitmonchan">
+                                            <img class="pkmn-img" src="img/calc/107MS.png">Hitmonchan
+                                        </div>
+                                        <div class="item" data-value="Lickitung">
+                                            <img class="pkmn-img" src="img/calc/108MS.png">Lickitung
+                                        </div>
+                                        <div class="item" data-value="Koffing">
+                                            <img class="pkmn-img" src="img/calc/109MS.png">Koffing
+                                        </div>
+                                        <div class="item" data-value="Weezing">
+                                            <img class="pkmn-img" src="img/calc/110MS.png">Weezing
+                                        </div>
+                                        <div class="item" data-value="Rhyhorn">
+                                            <img class="pkmn-img" src="img/calc/111MS.png">Rhyhorn
+                                        </div>
+                                        <div class="item" data-value="Rhydon">
+                                            <img class="pkmn-img" src="img/calc/112MS.png">Rhydon
+                                        </div>
+                                        <div class="item" data-value="Chansey">
+                                            <img class="pkmn-img" src="img/calc/113MS.png">Chansey
+                                        </div>
+                                        <div class="item" data-value="Tangela">
+                                            <img class="pkmn-img" src="img/calc/114MS.png">Tangela
+                                        </div>
+                                        <div class="item" data-value="Kangaskhan">
+                                            <img class="pkmn-img" src="img/calc/115MS.png">Kangaskhan
+                                        </div>
+                                        <div class="item" data-value="Horsea">
+                                            <img class="pkmn-img" src="img/calc/116MS.png">Horsea
+                                        </div>
+                                        <div class="item" data-value="Seadra">
+                                            <img class="pkmn-img" src="img/calc/117MS.png">Seadra
+                                        </div>
+                                        <div class="item" data-value="Goldeen">
+                                            <img class="pkmn-img" src="img/calc/118MS.png">Goldeen
+                                        </div>
+                                        <div class="item" data-value="Seaking">
+                                            <img class="pkmn-img" src="img/calc/119MS.png">Seaking
+                                        </div>
+                                        <div class="item" data-value="Staryu">
+                                            <img class="pkmn-img" src="img/calc/120MS.png">Staryu
+                                        </div>
+                                        <div class="item" data-value="Starmie">
+                                            <img class="pkmn-img" src="img/calc/121MS.png">Starmie
+                                        </div>
+                                        <div class="item" data-value="Mr. Mime">
+                                            <img class="pkmn-img" src="img/calc/122MS.png">Mr. Mime
+                                        </div>
+                                        <div class="item" data-value="Scyther">
+                                            <img class="pkmn-img" src="img/calc/123MS.png">Scyther
+                                        </div>
+                                        <div class="item" data-value="Jynx">
+                                            <img class="pkmn-img" src="img/calc/124MS.png">Jynx
+                                        </div>
+                                        <div class="item" data-value="Electabuzz">
+                                            <img class="pkmn-img" src="img/calc/125MS.png">Electabuzz
+                                        </div>
+                                        <div class="item" data-value="Magmar">
+                                            <img class="pkmn-img" src="img/calc/126MS.png">Magmar
+                                        </div>
+                                        <div class="item" data-value="Pinsir">
+                                            <img class="pkmn-img" src="img/calc/127MS.png">Pinsir
+                                        </div>
+                                        <div class="item" data-value="Tauros">
+                                            <img class="pkmn-img" src="img/calc/128MS.png">Tauros
+                                        </div>
+                                        <div class="item" data-value="Magikarp">
+                                            <img class="pkmn-img" src="img/calc/129MS.png">Magikarp
+                                        </div>
+                                        <div class="item" data-value="Gyarados">
+                                            <img class="pkmn-img" src="img/calc/130MS.png">Gyarados
+                                        </div>
+                                        <div class="item" data-value="Lapras">
+                                            <img class="pkmn-img" src="img/calc/131MS.png">Lapras
+                                        </div>
+                                        <div class="item" data-value="Ditto">
+                                            <img class="pkmn-img" src="img/calc/132MS.png">Ditto
+                                        </div>
+                                        <div class="item" data-value="Eevee">
+                                            <img class="pkmn-img" src="img/calc/133MS.png">Eevee
+                                        </div>
+                                        <div class="item" data-value="Vaporeon">
+                                            <img class="pkmn-img" src="img/calc/134MS.png">Vaporeon
+                                        </div>
+                                        <div class="item" data-value="Jolteon">
+                                            <img class="pkmn-img" src="img/calc/135MS.png">Jolteon
+                                        </div>
+                                        <div class="item" data-value="Flareon">
+                                            <img class="pkmn-img" src="img/calc/136MS.png">Flareon
+                                        </div>
+                                        <div class="item" data-value="Porygon">
+                                            <img class="pkmn-img" src="img/calc/137MS.png">Porygon
+                                        </div>
+                                        <div class="item" data-value="Omanyte">
+                                            <img class="pkmn-img" src="img/calc/138MS.png">Omanyte
+                                        </div>
+                                        <div class="item" data-value="Omastar">
+                                            <img class="pkmn-img" src="img/calc/139MS.png">Omastar
+                                        </div>
+                                        <div class="item" data-value="Kabuto">
+                                            <img class="pkmn-img" src="img/calc/140MS.png">Kabuto
+                                        </div>
+                                        <div class="item" data-value="Kabutops">
+                                            <img class="pkmn-img" src="img/calc/141MS.png">Kabutops
+                                        </div>
+                                        <div class="item" data-value="Aerodactyl">
+                                            <img class="pkmn-img" src="img/calc/142MS.png">Aerodactyl
+                                        </div>
+                                        <div class="item" data-value="Snorlax">
+                                            <img class="pkmn-img" src="img/calc/143MS.png">Snorlax
+                                        </div>
+                                        <div class="item" data-value="Articuno">
+                                            <img class="pkmn-img" src="img/calc/144MS.png">Articuno
+                                        </div>
+                                        <div class="item" data-value="Zapdos">
+                                            <img class="pkmn-img" src="img/calc/145MS.png">Zapdos
+                                        </div>
+                                        <div class="item" data-value="Moltres">
+                                            <img class="pkmn-img" src="img/calc/146MS.png">Moltres
+                                        </div>
+                                        <div class="item" data-value="Dratini">
+                                            <img class="pkmn-img" src="img/calc/147MS.png">Dratini
+                                        </div>
+                                        <div class="item" data-value="Dragonair">
+                                            <img class="pkmn-img" src="img/calc/148MS.png">Dragonair
+                                        </div>
+                                        <div class="item" data-value="Dragonite">
+                                            <img class="pkmn-img" src="img/calc/149MS.png">Dragonite
+                                        </div>
+                                        <div class="item" data-value="Mewtwo">
+                                            <img class="pkmn-img" src="img/calc/150MS.png">Mewtwo
+                                        </div>
+                                        <div class="item" data-value="Mew">
+                                            <img class="pkmn-img" src="img/calc/151MS.png">Mew
+                                        </div>
+                                        <div class="item" data-value="Chikorita">
+                                            <img class="pkmn-img" src="img/calc/152MS.png">Chikorita
+                                        </div>
+                                        <div class="item" data-value="Bayleef">
+                                            <img class="pkmn-img" src="img/calc/153MS.png">Bayleef
+                                        </div>
+                                        <div class="item" data-value="Meganium">
+                                            <img class="pkmn-img" src="img/calc/154MS.png">Meganium
+                                        </div>
+                                        <div class="item" data-value="Cyndaquil">
+                                            <img class="pkmn-img" src="img/calc/155MS.png">Cyndaquil
+                                        </div>
+                                        <div class="item" data-value="Quilava">
+                                            <img class="pkmn-img" src="img/calc/156MS.png">Quilava
+                                        </div>
+                                        <div class="item" data-value="Typhlosion">
+                                            <img class="pkmn-img" src="img/calc/157MS.png">Typhlosion
+                                        </div>
+                                        <div class="item" data-value="Totodile">
+                                            <img class="pkmn-img" src="img/calc/158MS.png">Totodile
+                                        </div>
+                                        <div class="item" data-value="Croconaw">
+                                            <img class="pkmn-img" src="img/calc/159MS.png">Croconaw
+                                        </div>
+                                        <div class="item" data-value="Feraligatr">
+                                            <img class="pkmn-img" src="img/calc/160MS.png">Feraligatr
+                                        </div>
+                                        <div class="item" data-value="Sentret">
+                                            <img class="pkmn-img" src="img/calc/161MS.png">Sentret
+                                        </div>
+                                        <div class="item" data-value="Furret">
+                                            <img class="pkmn-img" src="img/calc/162MS.png">Furret
+                                        </div>
+                                        <div class="item" data-value="Hoothoot">
+                                            <img class="pkmn-img" src="img/calc/163MS.png">Hoothoot
+                                        </div>
+                                        <div class="item" data-value="Noctowl">
+                                            <img class="pkmn-img" src="img/calc/164MS.png">Noctowl
+                                        </div>
+                                        <div class="item" data-value="Ledyba">
+                                            <img class="pkmn-img" src="img/calc/165MS.png">Ledyba
+                                        </div>
+                                        <div class="item" data-value="Ledian">
+                                            <img class="pkmn-img" src="img/calc/166MS.png">Ledian
+                                        </div>
+                                        <div class="item" data-value="Spinarak">
+                                            <img class="pkmn-img" src="img/calc/167MS.png">Spinarak
+                                        </div>
+                                        <div class="item" data-value="Ariados">
+                                            <img class="pkmn-img" src="img/calc/168MS.png">Ariados
+                                        </div>
+                                        <div class="item" data-value="Crobat">
+                                            <img class="pkmn-img" src="img/calc/169MS.png">Crobat
+                                        </div>
+                                        <div class="item" data-value="Chinchou">
+                                            <img class="pkmn-img" src="img/calc/170MS.png">Chinchou
+                                        </div>
+                                        <div class="item" data-value="Lanturn">
+                                            <img class="pkmn-img" src="img/calc/171MS.png">Lanturn
+                                        </div>
+                                        <div class="item" data-value="Pichu">
+                                            <img class="pkmn-img" src="img/calc/172MS.png">Pichu
+                                        </div>
+                                        <div class="item" data-value="Cleffa">
+                                            <img class="pkmn-img" src="img/calc/173MS.png">Cleffa
+                                        </div>
+                                        <div class="item" data-value="Igglybuff">
+                                            <img class="pkmn-img" src="img/calc/174MS.png">Igglybuff
+                                        </div>
+                                        <div class="item" data-value="Togepi">
+                                            <img class="pkmn-img" src="img/calc/175MS.png">Togepi
+                                        </div>
+                                        <div class="item" data-value="Togetic">
+                                            <img class="pkmn-img" src="img/calc/176MS.png">Togetic
+                                        </div>
+                                        <div class="item" data-value="Natu">
+                                            <img class="pkmn-img" src="img/calc/177MS.png">Natu
+                                        </div>
+                                        <div class="item" data-value="Xatu">
+                                            <img class="pkmn-img" src="img/calc/178MS.png">Xatu
+                                        </div>
+                                        <div class="item" data-value="Mareep">
+                                            <img class="pkmn-img" src="img/calc/179MS.png">Mareep
+                                        </div>
+                                        <div class="item" data-value="Flaaffy">
+                                            <img class="pkmn-img" src="img/calc/180MS.png">Flaaffy
+                                        </div>
+                                        <div class="item" data-value="Ampharos">
+                                            <img class="pkmn-img" src="img/calc/181MS.png">Ampharos
+                                        </div>
+                                        <div class="item" data-value="Bellossom">
+                                            <img class="pkmn-img" src="img/calc/182MS.png">Bellossom
+                                        </div>
+                                        <div class="item" data-value="Marill">
+                                            <img class="pkmn-img" src="img/calc/183MS.png">Marill
+                                        </div>
+                                        <div class="item" data-value="Azumarill">
+                                            <img class="pkmn-img" src="img/calc/184MS.png">Azumarill
+                                        </div>
+                                        <div class="item" data-value="Sudowoodo">
+                                            <img class="pkmn-img" src="img/calc/185MS.png">Sudowoodo
+                                        </div>
+                                        <div class="item" data-value="Politoed">
+                                            <img class="pkmn-img" src="img/calc/186MS.png">Politoed
+                                        </div>
+                                        <div class="item" data-value="Hoppip">
+                                            <img class="pkmn-img" src="img/calc/187MS.png">Hoppip
+                                        </div>
+                                        <div class="item" data-value="Skiploom">
+                                            <img class="pkmn-img" src="img/calc/188MS.png">Skiploom
+                                        </div>
+                                        <div class="item" data-value="Jumpluff">
+                                            <img class="pkmn-img" src="img/calc/189MS.png">Jumpluff
+                                        </div>
+                                        <div class="item" data-value="Aipom">
+                                            <img class="pkmn-img" src="img/calc/190MS.png">Aipom
+                                        </div>
+                                        <div class="item" data-value="Sunkern">
+                                            <img class="pkmn-img" src="img/calc/191MS.png">Sunkern
+                                        </div>
+                                        <div class="item" data-value="Sunflora">
+                                            <img class="pkmn-img" src="img/calc/192MS.png">Sunflora
+                                        </div>
+                                        <div class="item" data-value="Yanma">
+                                            <img class="pkmn-img" src="img/calc/193MS.png">Yanma
+                                        </div>
+                                        <div class="item" data-value="Wooper">
+                                            <img class="pkmn-img" src="img/calc/194MS.png">Wooper
+                                        </div>
+                                        <div class="item" data-value="Quagsire">
+                                            <img class="pkmn-img" src="img/calc/195MS.png">Quagsire
+                                        </div>
+                                        <div class="item" data-value="Espeon">
+                                            <img class="pkmn-img" src="img/calc/196MS.png">Espeon
+                                        </div>
+                                        <div class="item" data-value="Umbreon">
+                                            <img class="pkmn-img" src="img/calc/197MS.png">Umbreon
+                                        </div>
+                                        <div class="item" data-value="Murkrow">
+                                            <img class="pkmn-img" src="img/calc/198MS.png">Murkrow
+                                        </div>
+                                        <div class="item" data-value="Slowking">
+                                            <img class="pkmn-img" src="img/calc/199MS.png">Slowking
+                                        </div>
+                                        <div class="item" data-value="Misdreavus">
+                                            <img class="pkmn-img" src="img/calc/200MS.png">Misdreavus
+                                        </div>
+                                        <div class="item" data-value="Unown">
+                                            <img class="pkmn-img" src="img/calc/201MS.png">Unown
+                                        </div>
+                                        <div class="item" data-value="Wobbuffet">
+                                            <img class="pkmn-img" src="img/calc/202MS.png">Wobbuffet
+                                        </div>
+                                        <div class="item" data-value="Girafarig">
+                                            <img class="pkmn-img" src="img/calc/203MS.png">Girafarig
+                                        </div>
+                                        <div class="item" data-value="Pineco">
+                                            <img class="pkmn-img" src="img/calc/204MS.png">Pineco
+                                        </div>
+                                        <div class="item" data-value="Forretress">
+                                            <img class="pkmn-img" src="img/calc/205MS.png">Forretress
+                                        </div>
+                                        <div class="item" data-value="Dunsparce">
+                                            <img class="pkmn-img" src="img/calc/206MS.png">Dunsparce
+                                        </div>
+                                        <div class="item" data-value="Gligar">
+                                            <img class="pkmn-img" src="img/calc/207MS.png">Gligar
+                                        </div>
+                                        <div class="item" data-value="Steelix">
+                                            <img class="pkmn-img" src="img/calc/208MS.png">Steelix
+                                        </div>
+                                        <div class="item" data-value="Snubbull">
+                                            <img class="pkmn-img" src="img/calc/209MS.png">Snubbull
+                                        </div>
+                                        <div class="item" data-value="Granbull">
+                                            <img class="pkmn-img" src="img/calc/210MS.png">Granbull
+                                        </div>
+                                        <div class="item" data-value="Qwilfish">
+                                            <img class="pkmn-img" src="img/calc/211MS.png">Qwilfish
+                                        </div>
+                                        <div class="item" data-value="Scizor">
+                                            <img class="pkmn-img" src="img/calc/212MS.png">Scizor
+                                        </div>
+                                        <div class="item" data-value="Shuckle">
+                                            <img class="pkmn-img" src="img/calc/213MS.png">Shuckle
+                                        </div>
+                                        <div class="item" data-value="Heracross">
+                                            <img class="pkmn-img" src="img/calc/214MS.png">Heracross
+                                        </div>
+                                        <div class="item" data-value="Sneasel">
+                                            <img class="pkmn-img" src="img/calc/215MS.png">Sneasel
+                                        </div>
+                                        <div class="item" data-value="Teddiursa">
+                                            <img class="pkmn-img" src="img/calc/216MS.png">Teddiursa
+                                        </div>
+                                        <div class="item" data-value="Ursaring">
+                                            <img class="pkmn-img" src="img/calc/217MS.png">Ursaring
+                                        </div>
+                                        <div class="item" data-value="Slugma">
+                                            <img class="pkmn-img" src="img/calc/218MS.png">Slugma
+                                        </div>
+                                        <div class="item" data-value="Magcargo">
+                                            <img class="pkmn-img" src="img/calc/219MS.png">Magcargo
+                                        </div>
+                                        <div class="item" data-value="Swinub">
+                                            <img class="pkmn-img" src="img/calc/220MS.png">Swinub
+                                        </div>
+                                        <div class="item" data-value="Piloswine">
+                                            <img class="pkmn-img" src="img/calc/221MS.png">Piloswine
+                                        </div>
+                                        <div class="item" data-value="Corsola">
+                                            <img class="pkmn-img" src="img/calc/222MS.png">Corsola
+                                        </div>
+                                        <div class="item" data-value="Remoraid">
+                                            <img class="pkmn-img" src="img/calc/223MS.png">Remoraid
+                                        </div>
+                                        <div class="item" data-value="Octillery">
+                                            <img class="pkmn-img" src="img/calc/224MS.png">Octillery
+                                        </div>
+                                        <div class="item" data-value="Delibird">
+                                            <img class="pkmn-img" src="img/calc/225MS.png">Delibird
+                                        </div>
+                                        <div class="item" data-value="Mantine">
+                                            <img class="pkmn-img" src="img/calc/226MS.png">Mantine
+                                        </div>
+                                        <div class="item" data-value="Skarmory">
+                                            <img class="pkmn-img" src="img/calc/227MS.png">Skarmory
+                                        </div>
+                                        <div class="item" data-value="Houndour">
+                                            <img class="pkmn-img" src="img/calc/228MS.png">Houndour
+                                        </div>
+                                        <div class="item" data-value="Houndoom">
+                                            <img class="pkmn-img" src="img/calc/229MS.png">Houndoom
+                                        </div>
+                                        <div class="item" data-value="Kingdra">
+                                            <img class="pkmn-img" src="img/calc/230MS.png">Kingdra
+                                        </div>
+                                        <div class="item" data-value="Phanpy">
+                                            <img class="pkmn-img" src="img/calc/231MS.png">Phanpy
+                                        </div>
+                                        <div class="item" data-value="Donphan">
+                                            <img class="pkmn-img" src="img/calc/232MS.png">Donphan
+                                        </div>
+                                        <div class="item" data-value="Porygon2">
+                                            <img class="pkmn-img" src="img/calc/233MS.png">Porygon2
+                                        </div>
+                                        <div class="item" data-value="Stantler">
+                                            <img class="pkmn-img" src="img/calc/234MS.png">Stantler
+                                        </div>
+                                        <div class="item" data-value="Smeargle">
+                                            <img class="pkmn-img" src="img/calc/235MS.png">Smeargle
+                                        </div>
+                                        <div class="item" data-value="Tyrogue">
+                                            <img class="pkmn-img" src="img/calc/236MS.png">Tyrogue
+                                        </div>
+                                        <div class="item" data-value="Hitmontop">
+                                            <img class="pkmn-img" src="img/calc/237MS.png">Hitmontop
+                                        </div>
+                                        <div class="item" data-value="Smoochum">
+                                            <img class="pkmn-img" src="img/calc/238MS.png">Smoochum
+                                        </div>
+                                        <div class="item" data-value="Elekid">
+                                            <img class="pkmn-img" src="img/calc/239MS.png">Elekid
+                                        </div>
+                                        <div class="item" data-value="Magby">
+                                            <img class="pkmn-img" src="img/calc/240MS.png">Magby
+                                        </div>
+                                        <div class="item" data-value="Miltank">
+                                            <img class="pkmn-img" src="img/calc/241MS.png">Miltank
+                                        </div>
+                                        <div class="item" data-value="Blissey">
+                                            <img class="pkmn-img" src="img/calc/242MS.png">Blissey
+                                        </div>
+                                        <div class="item" data-value="Raikou">
+                                            <img class="pkmn-img" src="img/calc/243MS.png">Raikou
+                                        </div>
+                                        <div class="item" data-value="Entei">
+                                            <img class="pkmn-img" src="img/calc/244MS.png">Entei
+                                        </div>
+                                        <div class="item" data-value="Suicune">
+                                            <img class="pkmn-img" src="img/calc/245MS.png">Suicune
+                                        </div>
+                                        <div class="item" data-value="Larvitar">
+                                            <img class="pkmn-img" src="img/calc/246MS.png">Larvitar
+                                        </div>
+                                        <div class="item" data-value="Pupitar">
+                                            <img class="pkmn-img" src="img/calc/247MS.png">Pupitar
+                                        </div>
+                                        <div class="item" data-value="Tyranitar">
+                                            <img class="pkmn-img" src="img/calc/248MS.png">Tyranitar
+                                        </div>
+                                        <div class="item" data-value="Lugia">
+                                            <img class="pkmn-img" src="img/calc/249MS.png">Lugia
+                                        </div>
+                                        <div class="item" data-value="Ho-Oh">
+                                            <img class="pkmn-img" src="img/calc/250MS.png">Ho-Oh
+                                        </div>
+                                        <div class="item" data-value="Celebi">
+                                            <img class="pkmn-img" src="img/calc/251MS.png">Celebi
+                                        </div>
+                                        <div class="item" data-value="Treecko">
+                                            <img class="pkmn-img" src="img/calc/252MS.png">Treecko
+                                        </div>
+                                        <div class="item" data-value="Grovyle">
+                                            <img class="pkmn-img" src="img/calc/253MS.png">Grovyle
+                                        </div>
+                                        <div class="item" data-value="Sceptile">
+                                            <img class="pkmn-img" src="img/calc/254MS.png">Sceptile
+                                        </div>
+                                        <div class="item" data-value="Torchic">
+                                            <img class="pkmn-img" src="img/calc/255MS.png">Torchic
+                                        </div>
+                                        <div class="item" data-value="Combusken">
+                                            <img class="pkmn-img" src="img/calc/256MS.png">Combusken
+                                        </div>
+                                        <div class="item" data-value="Blaziken">
+                                            <img class="pkmn-img" src="img/calc/257MS.png">Blaziken
+                                        </div>
+                                        <div class="item" data-value="Mudkip">
+                                            <img class="pkmn-img" src="img/calc/258MS.png">Mudkip
+                                        </div>
+                                        <div class="item" data-value="Marshtomp">
+                                            <img class="pkmn-img" src="img/calc/259MS.png">Marshtomp
+                                        </div>
+                                        <div class="item" data-value="Swampert">
+                                            <img class="pkmn-img" src="img/calc/260MS.png">Swampert
+                                        </div>
+                                        <div class="item" data-value="Poochyena">
+                                            <img class="pkmn-img" src="img/calc/261MS.png">Poochyena
+                                        </div>
+                                        <div class="item" data-value="Mightyena">
+                                            <img class="pkmn-img" src="img/calc/262MS.png">Mightyena
+                                        </div>
+                                        <div class="item" data-value="Zigzagoon">
+                                            <img class="pkmn-img" src="img/calc/263MS.png">Zigzagoon
+                                        </div>
+                                        <div class="item" data-value="Linoone">
+                                            <img class="pkmn-img" src="img/calc/264MS.png">Linoone
+                                        </div>
+                                        <div class="item" data-value="Wurmple">
+                                            <img class="pkmn-img" src="img/calc/265MS.png">Wurmple
+                                        </div>
+                                        <div class="item" data-value="Silcoon">
+                                            <img class="pkmn-img" src="img/calc/266MS.png">Silcoon
+                                        </div>
+                                        <div class="item" data-value="Beautifly">
+                                            <img class="pkmn-img" src="img/calc/267MS.png">Beautifly
+                                        </div>
+                                        <div class="item" data-value="Cascoon">
+                                            <img class="pkmn-img" src="img/calc/268MS.png">Cascoon
+                                        </div>
+                                        <div class="item" data-value="Dustox">
+                                            <img class="pkmn-img" src="img/calc/269MS.png">Dustox
+                                        </div>
+                                        <div class="item" data-value="Lotad">
+                                            <img class="pkmn-img" src="img/calc/270MS.png">Lotad
+                                        </div>
+                                        <div class="item" data-value="Lombre">
+                                            <img class="pkmn-img" src="img/calc/271MS.png">Lombre
+                                        </div>
+                                        <div class="item" data-value="Ludicolo">
+                                            <img class="pkmn-img" src="img/calc/272MS.png">Ludicolo
+                                        </div>
+                                        <div class="item" data-value="Seedot">
+                                            <img class="pkmn-img" src="img/calc/273MS.png">Seedot
+                                        </div>
+                                        <div class="item" data-value="Nuzleaf">
+                                            <img class="pkmn-img" src="img/calc/274MS.png">Nuzleaf
+                                        </div>
+                                        <div class="item" data-value="Shiftry">
+                                            <img class="pkmn-img" src="img/calc/275MS.png">Shiftry
+                                        </div>
+                                        <div class="item" data-value="Taillow">
+                                            <img class="pkmn-img" src="img/calc/276MS.png">Taillow
+                                        </div>
+                                        <div class="item" data-value="Swellow">
+                                            <img class="pkmn-img" src="img/calc/277MS.png">Swellow
+                                        </div>
+                                        <div class="item" data-value="Wingull">
+                                            <img class="pkmn-img" src="img/calc/278MS.png">Wingull
+                                        </div>
+                                        <div class="item" data-value="Pelipper">
+                                            <img class="pkmn-img" src="img/calc/279MS.png">Pelipper
+                                        </div>
+                                        <div class="item" data-value="Ralts">
+                                            <img class="pkmn-img" src="img/calc/280MS.png">Ralts
+                                        </div>
+                                        <div class="item" data-value="Kirlia">
+                                            <img class="pkmn-img" src="img/calc/281MS.png">Kirlia
+                                        </div>
+                                        <div class="item" data-value="Gardevoir">
+                                            <img class="pkmn-img" src="img/calc/282MS.png">Gardevoir
+                                        </div>
+                                        <div class="item" data-value="Surskit">
+                                            <img class="pkmn-img" src="img/calc/283MS.png">Surskit
+                                        </div>
+                                        <div class="item" data-value="Masquerain">
+                                            <img class="pkmn-img" src="img/calc/284MS.png">Masquerain
+                                        </div>
+                                        <div class="item" data-value="Shroomish">
+                                            <img class="pkmn-img" src="img/calc/285MS.png">Shroomish
+                                        </div>
+                                        <div class="item" data-value="Breloom">
+                                            <img class="pkmn-img" src="img/calc/286MS.png">Breloom
+                                        </div>
+                                        <div class="item" data-value="Slakoth">
+                                            <img class="pkmn-img" src="img/calc/287MS.png">Slakoth
+                                        </div>
+                                        <div class="item" data-value="Vigoroth">
+                                            <img class="pkmn-img" src="img/calc/288MS.png">Vigoroth
+                                        </div>
+                                        <div class="item" data-value="Slaking">
+                                            <img class="pkmn-img" src="img/calc/289MS.png">Slaking
+                                        </div>
+                                        <div class="item" data-value="Nincada">
+                                            <img class="pkmn-img" src="img/calc/290MS.png">Nincada
+                                        </div>
+                                        <div class="item" data-value="Ninjask">
+                                            <img class="pkmn-img" src="img/calc/291MS.png">Ninjask
+                                        </div>
+                                        <div class="item" data-value="Shedinja">
+                                            <img class="pkmn-img" src="img/calc/292MS.png">Shedinja
+                                        </div>
+                                        <div class="item" data-value="Whismur">
+                                            <img class="pkmn-img" src="img/calc/293MS.png">Whismur
+                                        </div>
+                                        <div class="item" data-value="Loudred">
+                                            <img class="pkmn-img" src="img/calc/294MS.png">Loudred
+                                        </div>
+                                        <div class="item" data-value="Exploud">
+                                            <img class="pkmn-img" src="img/calc/295MS.png">Exploud
+                                        </div>
+                                        <div class="item" data-value="Makuhita">
+                                            <img class="pkmn-img" src="img/calc/296MS.png">Makuhita
+                                        </div>
+                                        <div class="item" data-value="Hariyama">
+                                            <img class="pkmn-img" src="img/calc/297MS.png">Hariyama
+                                        </div>
+                                        <div class="item" data-value="Azurill">
+                                            <img class="pkmn-img" src="img/calc/298MS.png">Azurill
+                                        </div>
+                                        <div class="item" data-value="Nosepass">
+                                            <img class="pkmn-img" src="img/calc/299MS.png">Nosepass
+                                        </div>
+                                        <div class="item" data-value="Skitty">
+                                            <img class="pkmn-img" src="img/calc/300MS.png">Skitty
+                                        </div>
+                                        <div class="item" data-value="Delcatty">
+                                            <img class="pkmn-img" src="img/calc/301MS.png">Delcatty
+                                        </div>
+                                        <div class="item" data-value="Sableye">
+                                            <img class="pkmn-img" src="img/calc/302MS.png">Sableye
+                                        </div>
+                                        <div class="item" data-value="Mawile">
+                                            <img class="pkmn-img" src="img/calc/303MS.png">Mawile
+                                        </div>
+                                        <div class="item" data-value="Aron">
+                                            <img class="pkmn-img" src="img/calc/304MS.png">Aron
+                                        </div>
+                                        <div class="item" data-value="Lairon">
+                                            <img class="pkmn-img" src="img/calc/305MS.png">Lairon
+                                        </div>
+                                        <div class="item" data-value="Aggron">
+                                            <img class="pkmn-img" src="img/calc/306MS.png">Aggron
+                                        </div>
+                                        <div class="item" data-value="Meditite">
+                                            <img class="pkmn-img" src="img/calc/307MS.png">Meditite
+                                        </div>
+                                        <div class="item" data-value="Medicham">
+                                            <img class="pkmn-img" src="img/calc/308MS.png">Medicham
+                                        </div>
+                                        <div class="item" data-value="Electrike">
+                                            <img class="pkmn-img" src="img/calc/309MS.png">Electrike
+                                        </div>
+                                        <div class="item" data-value="Manectric">
+                                            <img class="pkmn-img" src="img/calc/310MS.png">Manectric
+                                        </div>
+                                        <div class="item" data-value="Plusle">
+                                            <img class="pkmn-img" src="img/calc/311MS.png">Plusle
+                                        </div>
+                                        <div class="item" data-value="Minun">
+                                            <img class="pkmn-img" src="img/calc/312MS.png">Minun
+                                        </div>
+                                        <div class="item" data-value="Volbeat">
+                                            <img class="pkmn-img" src="img/calc/313MS.png">Volbeat
+                                        </div>
+                                        <div class="item" data-value="Illumise">
+                                            <img class="pkmn-img" src="img/calc/314MS.png">Illumise
+                                        </div>
+                                        <div class="item" data-value="Roselia">
+                                            <img class="pkmn-img" src="img/calc/315MS.png">Roselia
+                                        </div>
+                                        <div class="item" data-value="Gulpin">
+                                            <img class="pkmn-img" src="img/calc/316MS.png">Gulpin
+                                        </div>
+                                        <div class="item" data-value="Swalot">
+                                            <img class="pkmn-img" src="img/calc/317MS.png">Swalot
+                                        </div>
+                                        <div class="item" data-value="Carvanha">
+                                            <img class="pkmn-img" src="img/calc/318MS.png">Carvanha
+                                        </div>
+                                        <div class="item" data-value="Sharpedo">
+                                            <img class="pkmn-img" src="img/calc/319MS.png">Sharpedo
+                                        </div>
+                                        <div class="item" data-value="Wailmer">
+                                            <img class="pkmn-img" src="img/calc/320MS.png">Wailmer
+                                        </div>
+                                        <div class="item" data-value="Wailord">
+                                            <img class="pkmn-img" src="img/calc/321MS.png">Wailord
+                                        </div>
+                                        <div class="item" data-value="Numel">
+                                            <img class="pkmn-img" src="img/calc/322MS.png">Numel
+                                        </div>
+                                        <div class="item" data-value="Camerupt">
+                                            <img class="pkmn-img" src="img/calc/323MS.png">Camerupt
+                                        </div>
+                                        <div class="item" data-value="Torkoal">
+                                            <img class="pkmn-img" src="img/calc/324MS.png">Torkoal
+                                        </div>
+                                        <div class="item" data-value="Spoink">
+                                            <img class="pkmn-img" src="img/calc/325MS.png">Spoink
+                                        </div>
+                                        <div class="item" data-value="Grumpig">
+                                            <img class="pkmn-img" src="img/calc/326MS.png">Grumpig
+                                        </div>
+                                        <div class="item" data-value="Spinda">
+                                            <img class="pkmn-img" src="img/calc/327MS.png">Spinda
+                                        </div>
+                                        <div class="item" data-value="Trapinch">
+                                            <img class="pkmn-img" src="img/calc/328MS.png">Trapinch
+                                        </div>
+                                        <div class="item" data-value="Vibrava">
+                                            <img class="pkmn-img" src="img/calc/329MS.png">Vibrava
+                                        </div>
+                                        <div class="item" data-value="Flygon">
+                                            <img class="pkmn-img" src="img/calc/330MS.png">Flygon
+                                        </div>
+                                        <div class="item" data-value="Cacnea">
+                                            <img class="pkmn-img" src="img/calc/331MS.png">Cacnea
+                                        </div>
+                                        <div class="item" data-value="Cacturne">
+                                            <img class="pkmn-img" src="img/calc/332MS.png">Cacturne
+                                        </div>
+                                        <div class="item" data-value="Swablu">
+                                            <img class="pkmn-img" src="img/calc/333MS.png">Swablu
+                                        </div>
+                                        <div class="item" data-value="Altaria">
+                                            <img class="pkmn-img" src="img/calc/334MS.png">Altaria
+                                        </div>
+                                        <div class="item" data-value="Zangoose">
+                                            <img class="pkmn-img" src="img/calc/335MS.png">Zangoose
+                                        </div>
+                                        <div class="item" data-value="Seviper">
+                                            <img class="pkmn-img" src="img/calc/336MS.png">Seviper
+                                        </div>
+                                        <div class="item" data-value="Lunatone">
+                                            <img class="pkmn-img" src="img/calc/337MS.png">Lunatone
+                                        </div>
+                                        <div class="item" data-value="Solrock">
+                                            <img class="pkmn-img" src="img/calc/338MS.png">Solrock
+                                        </div>
+                                        <div class="item" data-value="Barboach">
+                                            <img class="pkmn-img" src="img/calc/339MS.png">Barboach
+                                        </div>
+                                        <div class="item" data-value="Whiscash">
+                                            <img class="pkmn-img" src="img/calc/340MS.png">Whiscash
+                                        </div>
+                                        <div class="item" data-value="Corphish">
+                                            <img class="pkmn-img" src="img/calc/341MS.png">Corphish
+                                        </div>
+                                        <div class="item" data-value="Crawdaunt">
+                                            <img class="pkmn-img" src="img/calc/342MS.png">Crawdaunt
+                                        </div>
+                                        <div class="item" data-value="Baltoy">
+                                            <img class="pkmn-img" src="img/calc/343MS.png">Baltoy
+                                        </div>
+                                        <div class="item" data-value="Claydol">
+                                            <img class="pkmn-img" src="img/calc/344MS.png">Claydol
+                                        </div>
+                                        <div class="item" data-value="Lileep">
+                                            <img class="pkmn-img" src="img/calc/345MS.png">Lileep
+                                        </div>
+                                        <div class="item" data-value="Cradily">
+                                            <img class="pkmn-img" src="img/calc/346MS.png">Cradily
+                                        </div>
+                                        <div class="item" data-value="Anorith">
+                                            <img class="pkmn-img" src="img/calc/347MS.png">Anorith
+                                        </div>
+                                        <div class="item" data-value="Armaldo">
+                                            <img class="pkmn-img" src="img/calc/348MS.png">Armaldo
+                                        </div>
+                                        <div class="item" data-value="Feebas">
+                                            <img class="pkmn-img" src="img/calc/349MS.png">Feebas
+                                        </div>
+                                        <div class="item" data-value="Milotic">
+                                            <img class="pkmn-img" src="img/calc/350MS.png">Milotic
+                                        </div>
+                                        <div class="item" data-value="Castform">
+                                            <img class="pkmn-img" src="img/calc/351MS.png">Castform
+                                        </div>
+                                        <div class="item" data-value="Kecleon">
+                                            <img class="pkmn-img" src="img/calc/352MS.png">Kecleon
+                                        </div>
+                                        <div class="item" data-value="Shuppet">
+                                            <img class="pkmn-img" src="img/calc/353MS.png">Shuppet
+                                        </div>
+                                        <div class="item" data-value="Banette">
+                                            <img class="pkmn-img" src="img/calc/354MS.png">Banette
+                                        </div>
+                                        <div class="item" data-value="Duskull">
+                                            <img class="pkmn-img" src="img/calc/355MS.png">Duskull
+                                        </div>
+                                        <div class="item" data-value="Dusclops">
+                                            <img class="pkmn-img" src="img/calc/356MS.png">Dusclops
+                                        </div>
+                                        <div class="item" data-value="Tropius">
+                                            <img class="pkmn-img" src="img/calc/357MS.png">Tropius
+                                        </div>
+                                        <div class="item" data-value="Chimecho">
+                                            <img class="pkmn-img" src="img/calc/358MS.png">Chimecho
+                                        </div>
+                                        <div class="item" data-value="Absol">
+                                            <img class="pkmn-img" src="img/calc/359MS.png">Absol
+                                        </div>
+                                        <div class="item" data-value="Wynaut">
+                                            <img class="pkmn-img" src="img/calc/360MS.png">Wynaut
+                                        </div>
+                                        <div class="item" data-value="Snorunt">
+                                            <img class="pkmn-img" src="img/calc/361MS.png">Snorunt
+                                        </div>
+                                        <div class="item" data-value="Glalie">
+                                            <img class="pkmn-img" src="img/calc/362MS.png">Glalie
+                                        </div>
+                                        <div class="item" data-value="Spheal">
+                                            <img class="pkmn-img" src="img/calc/363MS.png">Spheal
+                                        </div>
+                                        <div class="item" data-value="Sealeo">
+                                            <img class="pkmn-img" src="img/calc/364MS.png">Sealeo
+                                        </div>
+                                        <div class="item" data-value="Walrein">
+                                            <img class="pkmn-img" src="img/calc/365MS.png">Walrein
+                                        </div>
+                                        <div class="item" data-value="Clamperl">
+                                            <img class="pkmn-img" src="img/calc/366MS.png">Clamperl
+                                        </div>
+                                        <div class="item" data-value="Huntail">
+                                            <img class="pkmn-img" src="img/calc/367MS.png">Huntail
+                                        </div>
+                                        <div class="item" data-value="Gorebyss">
+                                            <img class="pkmn-img" src="img/calc/368MS.png">Gorebyss
+                                        </div>
+                                        <div class="item" data-value="Relicanth">
+                                            <img class="pkmn-img" src="img/calc/369MS.png">Relicanth
+                                        </div>
+                                        <div class="item" data-value="Luvdisc">
+                                            <img class="pkmn-img" src="img/calc/370MS.png">Luvdisc
+                                        </div>
+                                        <div class="item" data-value="Bagon">
+                                            <img class="pkmn-img" src="img/calc/371MS.png">Bagon
+                                        </div>
+                                        <div class="item" data-value="Shelgon">
+                                            <img class="pkmn-img" src="img/calc/372MS.png">Shelgon
+                                        </div>
+                                        <div class="item" data-value="Salamence">
+                                            <img class="pkmn-img" src="img/calc/373MS.png">Salamence
+                                        </div>
+                                        <div class="item" data-value="Beldum">
+                                            <img class="pkmn-img" src="img/calc/374MS.png">Beldum
+                                        </div>
+                                        <div class="item" data-value="Metang">
+                                            <img class="pkmn-img" src="img/calc/375MS.png">Metang
+                                        </div>
+                                        <div class="item" data-value="Metagross">
+                                            <img class="pkmn-img" src="img/calc/376MS.png">Metagross
+                                        </div>
+                                        <div class="item" data-value="Regirock">
+                                            <img class="pkmn-img" src="img/calc/377MS.png">Regirock
+                                        </div>
+                                        <div class="item" data-value="Regice">
+                                            <img class="pkmn-img" src="img/calc/378MS.png">Regice
+                                        </div>
+                                        <div class="item" data-value="Registeel">
+                                            <img class="pkmn-img" src="img/calc/379MS.png">Registeel
+                                        </div>
+                                        <div class="item" data-value="Latias">
+                                            <img class="pkmn-img" src="img/calc/380MS.png">Latias
+                                        </div>
+                                        <div class="item" data-value="Latios">
+                                            <img class="pkmn-img" src="img/calc/381MS.png">Latios
+                                        </div>
+                                        <div class="item" data-value="Kyogre">
+                                            <img class="pkmn-img" src="img/calc/382MS.png">Kyogre
+                                        </div>
+                                        <div class="item" data-value="Groudon">
+                                            <img class="pkmn-img" src="img/calc/383MS.png">Groudon
+                                        </div>
+                                        <div class="item" data-value="Rayquaza">
+                                            <img class="pkmn-img" src="img/calc/384MS.png">Rayquaza
+                                        </div>
+                                        <div class="item" data-value="Jirachi">
+                                            <img class="pkmn-img" src="img/calc/385MS.png">Jirachi
+                                        </div>
+                                        <div class="item" data-value="Deoxys (N)">
+                                            <img class="pkmn-img" src="img/calc/386MS.png">Deoxys (N)
+                                        </div>
+
+                                        <div class="item" data-value="Klefki">
+                                            <img class="pkmn-img" src="img/calc/707MS.png">Klefki
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <br>
                             <br>
@@ -352,42 +1265,48 @@
                                 <div class="ui label text-input-label-1">
                                     Ingrese el IV ATK
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivatk">
+                                <input class="text-input-numb ivspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="31" value="0" id="ivatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
                                     Ingrese el IV DEF
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivdef">
+                                <input class="text-input-numb ivspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="31" value="0" id="ivdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
                                     Ingrese el IV SPD
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivvel">
+                                <input class="text-input-numb ivspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="31" value="0" id="ivvel">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
                                     Ingrese el IV SPATK
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivatksp">
+                                <input class="text-input-numb ivspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="31" value="0" id="ivatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
                                     Ingrese el IV SPDEF
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivdefsp">
+                                <input class="text-input-numb ivspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="31" value="0" id="ivdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-1">
                                     Ingrese el IV HP
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="ivps">
+                                <input class="text-input-numb ivspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}"
+                                    type="number" min="0" max="31" value="0" id="ivps">
                             </div>
                             <br>
                         </div>
@@ -398,42 +1317,48 @@
                                 <div class="ui label text-input-label-2">
                                     Ingrese el EV ATK
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evatk">
+                                <input class="text-input-numb evspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}" type="number"
+                                    min="0" max="255" value="0" id="evatk">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
                                     Ingrese el EV DEF
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evdef">
+                                <input class="text-input-numb evspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}" type="number"
+                                    min="0" max="255" value="0" id="evdef">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
                                     Ingrese el EV SPD
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evvel">
+                                <input class="text-input-numb evspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}" type="number"
+                                    min="0" max="255" value="0" id="evvel">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
                                     Ingrese el EV SPATK
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evatksp">
+                                <input class="text-input-numb evspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}" type="number"
+                                    min="0" max="255" value="0" id="evatksp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
                                     Ingrese el EV SPDEF
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evdefsp">
+                                <input class="text-input-numb evspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}" type="number"
+                                    min="0" max="255" value="0" id="evdefsp">
                             </div>
                             <br>
                             <div class="ui labeled input">
                                 <div class="ui label text-input-label-2">
                                     Ingrese el EV HP
                                 </div>
-                                <input class="text-input-numb" onfocus="if(this.value == 0) {this.value=''}" type="number" max="31" value="0" id="evps">
+                                <input class="text-input-numb evspkmn" onblur="if(this.value=='') {this.value=0}" onfocus="if(this.value == 0) {this.value=''}" type="number"
+                                    min="0" max="255" value="0" id="evps">
                             </div>
                             <br>
                         </div>

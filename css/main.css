@@ -6,7 +6,7 @@
 #seg-principal-titulo {
   text-align: center;
   margin: auto;
-  max-width: 320px;
+  max-width: 322px;
   min-width: 120px;
 }
 
@@ -64,7 +64,8 @@ h2 {
 
 .text-input-numb-2 {
   min-width: 168px !important;
-  text-align: center !important;
+  text-align: left !important;
+  margin: auto !important;
 }
 
 .text-input-label-0 {
@@ -91,4 +92,12 @@ h2 {
   position: relative;
 }
 
+.pkmn-img{
+  vertical-align: middle !important;
+  margin-left: -15px !important;
+  margin-right: -2px !important;
+  max-height: 40px !important;
+  margin-top: -1em !important;
+  margin-bottom: -1em !important; 
+}
 
