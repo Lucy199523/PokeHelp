@@ -67,6 +67,11 @@ h2 {
   text-align: left !important;
   margin: auto !important;
 }
+.text-input-numb-3{
+  max-width: 80px !important;
+  text-align: center !important;
+  color: red !important;
+}
 
 .text-input-label-0 {
   min-width: 86px !important;
