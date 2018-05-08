@@ -3952,10 +3952,87 @@ function pkmncalc() {
             atksp = 100;
             defsp = 100;
             vel = 100;
+            break;          
+        case "Snivy":
+            ps = 45;
+            atk = 45;
+            def = 55;
+            atksp = 45;
+            defsp = 55;
+            vel = 63;
             break;
-
-
-
+        case "Servine":
+            ps = 60;
+            atk = 60;
+            def = 75;
+            atksp = 60
+            defsp = 75;
+            vel = 83;
+            break;
+        case "Servine":
+            ps = 60;
+            atk = 60;
+            def = 75;
+            atksp = 60
+            defsp = 75;
+            vel = 83;
+            break;
+        case "Serperior":
+            ps = 75;
+            atk = 75;
+            def = 95;
+            atksp = 75;
+            defsp = 95;
+            vel = 113;
+            break;
+        case "Tepig":
+            ps = 65;
+            atk = 63;
+            def = 45;
+            atksp = 45;
+            defsp = 45;
+            vel = 45;
+            break;  
+        case "Pignite":
+            ps = 90;
+            atk = 93;
+            def = 55;
+            atksp = 70;
+            defsp = 55;
+            vel = 55;
+            break;  
+        case "Emboar":
+            ps = 110;
+            atk = 123;
+            def = 65;
+            atksp = 100;
+            defsp = 65;
+            vel = 65;
+            break;   
+        case "Oshawott":
+            ps = 55;
+            atk = 55;
+            def = 45;
+            atksp = 63;
+            defsp = 45;
+            vel = 45;
+            break;    
+        case "Dewott":
+            ps = 75;
+            atk = 75;
+            def = 60;
+            atksp = 83;
+            defsp = 60;
+            vel = 60;
+            break;    
+        case "Samurott":
+            ps = 95;
+            atk = 100;
+            def = 85;
+            atksp = 108;
+            defsp = 70;
+            vel = 70;
+            break;                     
         case "Conkeldurr":
             ps = 105;
             atk = 140;
