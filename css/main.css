@@ -67,7 +67,8 @@ h2 {
   text-align: left !important;
   margin: auto !important;
 }
-.text-input-numb-3{
+
+.text-input-numb-3 {
   max-width: 80px !important;
   text-align: center !important;
   color: red !important;
@@ -88,7 +89,7 @@ h2 {
 }
 
 .text-input-label-3 {
-  width: 93px;
+  width: 105px;
 }
 
 .calc-element {
@@ -97,12 +98,15 @@ h2 {
   position: relative;
 }
 
-.pkmn-img{
+.pkmn-img {
   vertical-align: middle !important;
   margin-left: -15px !important;
   margin-right: -2px !important;
   max-height: 40px !important;
   margin-top: -1em !important;
-  margin-bottom: -1em !important; 
+  margin-bottom: -1em !important;
 }
 
+#hp {
+  width: 80px;
+}
