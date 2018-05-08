@@ -3953,9 +3953,54 @@ function pkmncalc() {
             defsp = 100;
             vel = 100;
             break;
-
-
-
+        case "Snivy":
+            ps = 45;
+            atk = 45;
+            def = 55;
+            atksp = 45;
+            defsp = 55;
+            vel = 63;
+            break;
+        case "Servine":
+            ps = 60;
+            atk = 60;
+            def = 75;
+            atksp = 60;
+            defsp = 75;
+            vel = 83;
+            break;
+        case "Serperior":
+            ps = 75;
+            atk = 75;
+            def = 95;
+            atksp = 75;
+            defsp = 95;
+            vel = 113;
+            break;
+        case "Tepig":
+            ps = 65;
+            atk = 63;
+            def = 45;
+            atksp = 45;
+            defsp = 45;
+            vel = 45;
+            break;
+        case "Pignite":
+            ps = 90;
+            atk = 93;
+            def = 55;
+            atksp = 70;
+            defsp = 55;
+            vel = 55;
+            break;
+        case "Tepig":
+            ps = 65;
+            atk = 63;
+            def = 45;
+            atksp = 45;
+            defsp = 45;
+            vel = 45;
+            break;
         case "Conkeldurr":
             ps = 105;
             atk = 140;
