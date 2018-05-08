@@ -3969,14 +3969,6 @@ function pkmncalc() {
             defsp = 75;
             vel = 83;
             break;
-        case "Servine":
-            ps = 60;
-            atk = 60;
-            def = 75;
-            atksp = 60
-            defsp = 75;
-            vel = 83;
-            break;
         case "Serperior":
             ps = 75;
             atk = 75;
