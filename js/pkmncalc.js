@@ -3961,7 +3961,7 @@ function pkmncalc() {
             defsp = 55;
             vel = 63;
             break;
-        case "Servine"
+        case "Servine":
             ps = 60;
             atk = 60;
             def = 75;
@@ -3969,7 +3969,7 @@ function pkmncalc() {
             defsp = 75;
             vel = 83;
             break;
-        case "Servine"
+        case "Servine":
             ps = 60;
             atk = 60;
             def = 75;
@@ -3977,7 +3977,7 @@ function pkmncalc() {
             defsp = 75;
             vel = 83;
             break;
-        case "Serperior"
+        case "Serperior":
             ps = 75;
             atk = 75;
             def = 95;
@@ -3985,7 +3985,7 @@ function pkmncalc() {
             defsp = 95;
             vel = 113;
             break;
-        case "Tepig"
+        case "Tepig":
             ps = 65;
             atk = 63;
             def = 45;
@@ -3993,7 +3993,7 @@ function pkmncalc() {
             defsp = 45;
             vel = 45;
             break;  
-        case "Pignite"
+        case "Pignite":
             ps = 90;
             atk = 93;
             def = 55;
@@ -4001,7 +4001,7 @@ function pkmncalc() {
             defsp = 55;
             vel = 55;
             break;  
-        case "Emboar"
+        case "Emboar":
             ps = 110;
             atk = 123;
             def = 65;
@@ -4009,7 +4009,7 @@ function pkmncalc() {
             defsp = 65;
             vel = 65;
             break;   
-        case "Oshawott"
+        case "Oshawott":
             ps = 55;
             atk = 55;
             def = 45;
@@ -4017,7 +4017,7 @@ function pkmncalc() {
             defsp = 45;
             vel = 45;
             break;    
-        case "Dewott"
+        case "Dewott":
             ps = 75;
             atk = 75;
             def = 60;
@@ -4025,7 +4025,7 @@ function pkmncalc() {
             defsp = 60;
             vel = 60;
             break;    
-        case "Samurott"
+        case "Samurott":
             ps = 95;
             atk = 100;
             def = 85;
