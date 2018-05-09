@@ -4265,7 +4265,6 @@ function pkmncalc() {
             defsp = 50;
             vel = 40;
             break;
-
         case "Conkeldurr":
             ps = 105;
             atk = 140;
@@ -4273,6 +4272,110 @@ function pkmncalc() {
             atksp = 55;
             defsp = 65;
             vel = 45;
+            break;
+        case "Tympole":
+            ps = 50;
+            atk = 50;
+            def = 40;
+            atksp = 50;
+            defsp = 40;
+            vel = 64;
+            break;
+        case "Palpitoad":
+            ps = 75;
+            atk = 65;
+            def = 55;
+            atksp = 65;
+            defsp = 55;
+            vel = 69;
+            break;
+        case "Seismitoad":
+            ps = 105;
+            atk = 95;
+            def = 75;
+            atksp = 85;
+            defsp = 75;
+            vel = 74;
+            break;
+        case "Throh":
+            ps = 120;
+            atk = 100;
+            def = 85;
+            atksp = 30;
+            defsp = 85;
+            vel = 45;
+            break;
+        case "Sawk":
+            ps = 75;
+            atk = 125;
+            def = 75;
+            atksp = 30;
+            defsp = 75;
+            vel = 85;
+            break;
+        case "Swaddle":
+            ps = 45;
+            atk = 53;
+            def = 70;
+            atksp = 40;
+            defsp = 60;
+            vel = 42;
+            break;
+        case "Swadloon":
+            ps = 55;
+            atk = 63;
+            def = 90;
+            atksp = 50;
+            defsp = 80;
+            vel = 42;
+            break;
+        case "Leavanny":
+            ps = 75;
+            atk = 103;
+            def = 80;
+            atksp = 70;
+            defsp = 80;
+            vel = 92;
+            break;
+        case "Venipede":
+            ps = 30;
+            atk = 45;
+            def = 59;
+            atksp = 30;
+            defsp = 39;
+            vel = 57;
+            break;
+        case "Whirlipede":
+            ps = 40;
+            atk = 55;
+            def = 99;
+            atksp = 40;
+            defsp = 79;
+            vel = 47;
+            break;
+        case "Scolipede":
+            ps = 60;
+            atk = 100;
+            def = 89;
+            atksp = 55;
+            defsp = 69;
+            vel = 112;
+            break;
+        case "Cottonee":
+            ps = 40;
+            atk = 27;
+            def = 60;
+            atksp = 37;
+            defsp = 50;
+            vel = 66;
+            break;
+        case "Whimscott":
+            ps = 60;
+            atk = 67;
+            def = 85;
+            atksp = 77;
+            defsp = 75;
+            vel = 116;
             break;
         case "Petilil":
             ps = 45;
@@ -4290,6 +4393,182 @@ function pkmncalc() {
             defsp = 75;
             vel = 90;
             break;
+                    case "Basculin":
+            ps = 70;
+            atk = 92;
+            def = 65;
+            atksp = 80;
+            defsp = 55;
+            vel = 98;
+            break;
+        case "Sandile":
+            ps = 50;
+            atk = 72;
+            def = 35;
+            atksp = 35;
+            defsp = 35;
+            vel = 65;
+            break;
+        case "Krokorok":
+            ps = 60;
+            atk = 82;
+            def = 45;
+            atksp =45;
+            defsp = 45;
+            vel = 74;
+            break;
+        case "Krookodile":
+            ps = 95;
+            atk = 117;
+            def = 80;
+            atksp = 65;
+            defsp = 70;
+            vel = 92;
+            break;	
+        case "Darumaka":
+            ps = 70;
+            atk = 90;
+            def = 45;
+            atksp = 15;
+            defsp = 45;
+            vel = 95;
+            break;
+        case "Darmanite(StandardMode)":
+            ps = 105;
+            atk = 140;
+            def = 55;
+            atksp = 30;
+            defsp = 55;
+            vel = 95;
+            break;
+        case "Darmanite(ZenMode)":
+            ps = 105;
+            atk = 30;
+            def = 105;
+            atksp = 140;
+            defsp = 105;
+            vel = 55;
+            break;
+        case "Maractus":
+            ps = 75;
+            atk = 86;
+            def = 67;
+            atksp = 106;
+            defsp = 67;
+            vel = 60;
+            break;
+        case "Dwebble":
+            ps = 50;
+            atk = 65;
+            def = 85;
+            atksp = 35;
+            defsp = 35;
+            vel = 55;
+            break;
+        case "Crustle":
+            ps = 70;
+            atk = 105;
+            def = 125;
+            atksp = 65;
+            defsp = 75;
+            vel = 45;
+            break;
+        case "Scraggy":
+            ps = 50;
+            atk = 75;
+            def = 70;
+            atksp = 35;
+            defsp = 70;
+            vel = 48;
+            break;
+        case "Scrafty":
+            ps = 65;
+            atk = 90;
+            def = 115;
+            atksp = 45;
+            defsp = 115;
+            vel = 58;
+            break;
+        case "Sigilyph":
+            ps = 72;
+            atk = 58;
+            def = 80;
+            atksp = 103;
+            defsp = 80;
+            vel = 97;
+            break;
+        case "Yamask":
+            ps = 38;
+            atk = 30;
+            def = 85;
+            atksp = 55;
+            defsp = 65;
+            vel = 30;
+            break;
+        case "Cofagrigus":
+            ps = 58;
+            atk = 50;
+            def = 145;
+            atksp = 95;
+            defsp = 105;
+            vel = 30;
+            break;
+        case "Tirtouga":
+            ps = 54;
+            atk = 78;
+            def = 103;
+            atksp = 53;
+            defsp = 45;
+            vel = 22;
+            break;
+        case "Carracosta":
+            ps = 74;
+            atk = 108;
+            def = 133;
+            atksp = 83;
+            defsp = 65;
+            vel = 32;
+            break;
+        case "Archen":
+            ps = 55;
+            atk = 112;
+            def = 45;
+            atksp = 74;
+            defsp = 45;
+            vel = 70;
+            break;
+        case "Archeops":
+            ps = 75;
+            atk = 140;
+            def = 65;
+            atksp = 112;
+            defsp = 65;
+            vel = 110;
+            break;
+        case "Trubbish":
+            ps = 50;
+            atk = 50;
+            def = 62;
+            atksp = 40;
+            defsp = 62;
+            vel = 65;
+            break;
+        case "Garbodor":
+            ps = 80;
+            atk = 95;
+            def = 82;
+            atksp = 60;
+            defsp = 82;
+            vel = 75;
+            break;
+        case "Zorua":
+            ps = 40;
+            atk = 65;
+            def = 40;
+            atksp = 80;
+            defsp = 40;
+            vel = 65;
+            break;
         case "Zoroark":
             ps = 60;
             atk = 105;
@@ -4298,6 +4577,174 @@ function pkmncalc() {
             defsp = 60;
             vel = 105;
             break;
+        case "Minccino":
+            ps = 55;
+            atk = 50;
+            def = 40;
+            atksp = 40;
+            defsp = 40;
+            vel = 75;
+            break;
+        case "Cinccino":
+            ps = 75;
+            atk = 95;
+            def = 60;
+            atksp = 65;
+            defsp = 60;
+            vel = 115;
+            break;
+        case "Gothita":
+            ps = 45;
+            atk = 30;
+            def = 50;
+            atksp = 55;
+            defsp = 65;
+            vel = 45;
+            break;
+        case "Gothorita":
+            ps = 60;
+            atk = 45;
+            def = 70;
+            atksp = 75;
+            defsp = 85;
+            vel = 55;
+            break;
+        case "Gothitelle":
+            ps = 70;
+            atk = 55;
+            def = 95;
+            atksp = 95;
+            defsp = 110;
+            vel = 65;
+            break;
+        case "Solosis":
+            ps = 45;
+            atk = 30;
+            def = 40;
+            atksp = 105;
+            defsp = 50;
+            vel = 20;
+            break;
+        case "Duosion":
+            ps = 65;
+            atk = 40;
+            def = 50;
+            atksp = 125;
+            defsp = 60;
+            vel = 30;
+            break;
+        case "Reuniclus":
+            ps = 110;
+            atk = 65;
+            def = 75;
+            atksp = 125;
+            defsp = 85;
+            vel = 30 	;
+            break;
+        case "Ducklett":
+            ps = 62;
+            atk = 44;
+            def = 50;
+            atksp = 44;
+            defsp = 50;
+            vel = 55;
+            break;
+        case "Swanna":
+            ps = 75;
+            atk = 87;
+            def = 63;
+            atksp = 87;
+            defsp = 63;
+            vel = 98;
+            break;
+        case "Vanillite":
+            ps = 36;
+            atk = 50;
+            def = 50;
+            atksp = 65;
+            defsp = 60;
+            vel = 44;
+            break;
+        case "Vanillish":
+            ps = 51;
+            atk = 65;
+            def = 65;
+            atksp = 80;
+            defsp = 75;
+            vel = 59;
+            break;
+        case "Vanilluxe":
+            ps = 71;
+            atk = 95;
+            def = 85;
+            atksp = 110;
+            defsp = 95;
+            vel = 79;
+            break;
+        case "Deerling":
+            ps = 60;
+            atk = 60;
+            def = 50;
+            atksp = 40;
+            defsp = 50;
+            vel = 75;
+            break;
+        case "Sawsbuck":
+            ps = 80;
+            atk = 100;
+            def = 70;
+            atksp = 60;
+            defsp = 70;
+            vel = 95;
+            break;
+        case "Emolga":
+            ps = 55;
+            atk = 75;
+            def = 60;
+            atksp = 75;
+            defsp = 60;
+            vel = 103;
+            break;
+        case "Karrablast":
+            ps = 50;
+            atk = 75;
+            def = 45;
+            atksp = 40;
+            defsp = 45;
+            vel = 60;
+            break;
+        case "Escavalier":
+            ps = 70;
+            atk = 135;
+            def = 105;
+            atksp = 60;
+            defsp = 105;
+            vel = 20;
+            break;
+        case "Foongus":
+            ps = 69;
+            atk = 55;
+            def = 45;
+            atksp = 55;
+            defsp = 55;
+            vel = 15;
+            break;
+        case "Amoonguss":
+            ps = 114;
+            atk = 85;
+            def = 70;
+            atksp = 85;
+            defsp = 80;
+            vel = 30;
+            break;
+        case "Frilish":
+            ps = 55;
+            atk = 40;
+            def = 50;
+            atksp = 65;
+            defsp = 85;
+            vel = 40;
+            break;
         case "Jellicent":
             ps = 100;
             atk = 60;
@@ -4305,6 +4752,14 @@ function pkmncalc() {
             atksp = 85;
             defsp = 105;
             vel = 60;
+            break;
+        case "Alomomola":
+            ps = 165;
+            atk = 75;
+            def = 80;
+            atksp = 40;
+            defsp = 45;
+            vel = 65;
             break;
         case "Joltik":
             ps = 50;
