@@ -4577,6 +4577,174 @@ function pkmncalc() {
             defsp = 60;
             vel = 105;
             break;
+        case "Minccino":
+            ps = 55;
+            atk = 50;
+            def = 40;
+            atksp = 40;
+            defsp = 40;
+            vel = 75;
+            break;
+        case "Cinccino":
+            ps = 75;
+            atk = 95;
+            def = 60;
+            atksp = 65;
+            defsp = 60;
+            vel = 115;
+            break;
+        case "Gothita":
+            ps = 45;
+            atk = 30;
+            def = 50;
+            atksp = 55;
+            defsp = 65;
+            vel = 45;
+            break;
+        case "Gothorita":
+            ps = 60;
+            atk = 45;
+            def = 70;
+            atksp = 75;
+            defsp = 85;
+            vel = 55;
+            break;
+        case "Gothitelle":
+            ps = 70;
+            atk = 55;
+            def = 95;
+            atksp = 95;
+            defsp = 110;
+            vel = 65;
+            break;
+        case "Solosis":
+            ps = 45;
+            atk = 30;
+            def = 40;
+            atksp = 105;
+            defsp = 50;
+            vel = 20;
+            break;
+        case "Duosion":
+            ps = 65;
+            atk = 40;
+            def = 50;
+            atksp = 125;
+            defsp = 60;
+            vel = 30;
+            break;
+        case "Reuniclus":
+            ps = 110;
+            atk = 65;
+            def = 75;
+            atksp = 125;
+            defsp = 85;
+            vel = 30 	;
+            break;
+        case "Ducklett":
+            ps = 62;
+            atk = 44;
+            def = 50;
+            atksp = 44;
+            defsp = 50;
+            vel = 55;
+            break;
+        case "Swanna":
+            ps = 75;
+            atk = 87;
+            def = 63;
+            atksp = 87;
+            defsp = 63;
+            vel = 98;
+            break;
+        case "Vanillite":
+            ps = 36;
+            atk = 50;
+            def = 50;
+            atksp = 65;
+            defsp = 60;
+            vel = 44;
+            break;
+        case "Vanillish":
+            ps = 51;
+            atk = 65;
+            def = 65;
+            atksp = 80;
+            defsp = 75;
+            vel = 59;
+            break;
+        case "Vanilluxe":
+            ps = 71;
+            atk = 95;
+            def = 85;
+            atksp = 110;
+            defsp = 95;
+            vel = 79;
+            break;
+        case "Deerling":
+            ps = 60;
+            atk = 60;
+            def = 50;
+            atksp = 40;
+            defsp = 50;
+            vel = 75;
+            break;
+        case "Sawsbuck":
+            ps = 80;
+            atk = 100;
+            def = 70;
+            atksp = 60;
+            defsp = 70;
+            vel = 95;
+            break;
+        case "Emolga":
+            ps = 55;
+            atk = 75;
+            def = 60;
+            atksp = 75;
+            defsp = 60;
+            vel = 103;
+            break;
+        case "Karrablast":
+            ps = 50;
+            atk = 75;
+            def = 45;
+            atksp = 40;
+            defsp = 45;
+            vel = 60;
+            break;
+        case "Escavalier":
+            ps = 70;
+            atk = 135;
+            def = 105;
+            atksp = 60;
+            defsp = 105;
+            vel = 20;
+            break;
+        case "Foongus":
+            ps = 69;
+            atk = 55;
+            def = 45;
+            atksp = 55;
+            defsp = 55;
+            vel = 15;
+            break;
+        case "Amoonguss":
+            ps = 114;
+            atk = 85;
+            def = 70;
+            atksp = 85;
+            defsp = 80;
+            vel = 30;
+            break;
+        case "Frilish":
+            ps = 55;
+            atk = 40;
+            def = 50;
+            atksp = 65;
+            defsp = 85;
+            vel = 40;
+            break;
         case "Jellicent":
             ps = 100;
             atk = 60;
@@ -4584,6 +4752,14 @@ function pkmncalc() {
             atksp = 85;
             defsp = 105;
             vel = 60;
+            break;
+        case "Alomomola":
+            ps = 165;
+            atk = 75;
+            def = 80;
+            atksp = 40;
+            defsp = 45;
+            vel = 65;
             break;
         case "Joltik":
             ps = 50;
