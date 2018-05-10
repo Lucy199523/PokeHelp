@@ -3952,7 +3952,7 @@ function pkmncalc() {
             atksp = 100;
             defsp = 100;
             vel = 100;
-            break;          
+            break;
         case "Snivy":
             ps = 45;
             atk = 45;
@@ -3984,7 +3984,7 @@ function pkmncalc() {
             atksp = 45;
             defsp = 45;
             vel = 45;
-            break;  
+            break;
         case "Pignite":
             ps = 90;
             atk = 93;
@@ -3992,7 +3992,7 @@ function pkmncalc() {
             atksp = 70;
             defsp = 55;
             vel = 55;
-            break;  
+            break;
         case "Emboar":
             ps = 110;
             atk = 123;
@@ -4000,7 +4000,7 @@ function pkmncalc() {
             atksp = 100;
             defsp = 65;
             vel = 65;
-            break;   
+            break;
         case "Oshawott":
             ps = 55;
             atk = 55;
@@ -4008,7 +4008,7 @@ function pkmncalc() {
             atksp = 63;
             defsp = 45;
             vel = 45;
-            break;    
+            break;
         case "Dewott":
             ps = 75;
             atk = 75;
@@ -4016,7 +4016,7 @@ function pkmncalc() {
             atksp = 83;
             defsp = 60;
             vel = 60;
-            break;    
+            break;
         case "Samurott":
             ps = 95;
             atk = 100;
@@ -4062,11 +4062,11 @@ function pkmncalc() {
             atk = 110;
             def = 90;
             atksp = 45;
-            defsp = 60;
+            defsp = 90;
             vel = 80;
             break;
-        case "Purloin":
-            ps = 64;
+        case "Purrloin":
+            ps = 41;
             atk = 50;
             def = 37;
             atksp = 50;
@@ -4148,7 +4148,7 @@ function pkmncalc() {
         case "Pidove":
             ps = 50;
             atk = 55;
-            def =50;
+            def = 50;
             atksp = 36;
             defsp = 30;
             vel = 43;
@@ -4160,7 +4160,7 @@ function pkmncalc() {
             atksp = 50;
             defsp = 42;
             vel = 65;
-            break; 
+            break;
         case "Unfezant":
             ps = 80;
             atk = 115;
@@ -4168,7 +4168,7 @@ function pkmncalc() {
             atksp = 65;
             defsp = 55;
             vel = 93;
-            break; 
+            break;
         case "Blitzle":
             ps = 45;
             atk = 60;
@@ -4177,7 +4177,7 @@ function pkmncalc() {
             defsp = 32;
             vel = 76;
             break;
-        case "Zebtrika":
+        case "Zebstrika":
             ps = 75;
             atk = 100;
             def = 63;
@@ -4208,7 +4208,7 @@ function pkmncalc() {
             atksp = 60;
             defsp = 80;
             vel = 25;
-            break;	
+            break;
         case "Woobat":
             ps = 65;
             atk = 45;
@@ -4313,7 +4313,7 @@ function pkmncalc() {
             defsp = 75;
             vel = 85;
             break;
-        case "Swaddle":
+        case "Sewaddle":
             ps = 45;
             atk = 53;
             def = 70;
@@ -4369,7 +4369,7 @@ function pkmncalc() {
             defsp = 50;
             vel = 66;
             break;
-        case "Whimscott":
+        case "Whimsicott":
             ps = 60;
             atk = 67;
             def = 85;
@@ -4393,7 +4393,7 @@ function pkmncalc() {
             defsp = 75;
             vel = 90;
             break;
-                    case "Basculin":
+        case "Basculin":
             ps = 70;
             atk = 92;
             def = 65;
@@ -4413,7 +4413,7 @@ function pkmncalc() {
             ps = 60;
             atk = 82;
             def = 45;
-            atksp =45;
+            atksp = 45;
             defsp = 45;
             vel = 74;
             break;
@@ -4424,16 +4424,16 @@ function pkmncalc() {
             atksp = 65;
             defsp = 70;
             vel = 92;
-            break;	
+            break;
         case "Darumaka":
             ps = 70;
             atk = 90;
             def = 45;
             atksp = 15;
             defsp = 45;
-            vel = 95;
+            vel = 50;
             break;
-        case "Darmanite(StandardMode)":
+        case "Darmanitan (S)":
             ps = 105;
             atk = 140;
             def = 55;
@@ -4441,7 +4441,7 @@ function pkmncalc() {
             defsp = 55;
             vel = 95;
             break;
-        case "Darmanite(ZenMode)":
+        case "Darmanitan (Z)":
             ps = 105;
             atk = 30;
             def = 105;
@@ -4639,7 +4639,7 @@ function pkmncalc() {
             def = 75;
             atksp = 125;
             defsp = 85;
-            vel = 30 	;
+            vel = 30;
             break;
         case "Ducklett":
             ps = 62;
@@ -4737,7 +4737,7 @@ function pkmncalc() {
             defsp = 80;
             vel = 30;
             break;
-        case "Frilish":
+        case "Frillish":
             ps = 55;
             atk = 40;
             def = 50;
