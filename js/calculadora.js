@@ -97,7 +97,7 @@ $(document).ready(function () {
         evvel = parseInt($("#evvel").val());
         //Pokemon Selecionado
         pkmncalc();
-        
+
         //comprobacion de datos
         if (pokeselect !== "" && nivel > 0 && !isNaN(ivatk) && !isNaN(ivatksp) && !isNaN(ivdef) &&
             !isNaN(ivdefsp) && !isNaN(ivps) && !isNaN(ivvel) && !isNaN(evatk) && !isNaN(evatksp) &&
