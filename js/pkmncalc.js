@@ -4777,6 +4777,86 @@ function pkmncalc() {
             defsp = 60;
             vel = 108;
             break;
+        case "Ferroseed":
+            ps = 44;
+            atk = 50;
+            def = 91;
+            atksp = 24;
+            defsp = 86;
+            vel = 10;
+            break;
+        case "Ferrothorn":
+            ps = 74;
+            atk = 94;
+            def = 131;
+            atksp = 54;
+            defsp = 116;
+            vel = 20;
+            break;
+        case "Klink":
+            ps = 40;
+            atk = 55;
+            def = 70;
+            atksp = 45;
+            defsp = 60;
+            vel = 30;
+            break;
+        case "Klang":
+            ps = 60;
+            atk = 55;
+            def = 95;
+            atksp = 70;
+            defsp = 85;
+            vel = 50;
+            break;
+        case "Klinklang":
+            ps = 60;
+            atk = 100;
+            def = 115;
+            atksp = 70;
+            defsp = 85;
+            vel = 90;
+            break;
+        case "Tynamo":
+            ps = 35;
+            atk = 55;
+            def = 40;
+            atksp = 45;
+            defsp = 40;
+            vel = 60;
+            break;
+        case "Eelektrik":
+            ps = 65;
+            atk = 85;
+            def = 70;
+            atksp = 75;
+            defsp = 70;
+            vel = 40;
+            break;
+        case "Eelektross":
+            ps = 85;
+            atk = 115;
+            def = 80;
+            atksp = 105;
+            defsp = 80;
+            vel = 50;
+            break;
+        case "Elgyem":
+            ps = 55;
+            atk = 55;
+            def = 55;
+            atksp = 85;
+            defsp = 55;
+            vel = 30;
+            break;
+        case "Beheeyem":
+            ps = 75;
+            atk = 75;
+            def = 75;
+            atksp = 125;
+            defsp = 95;
+            vel = 40;
+            break;
         case "Litwick":
             ps = 50;
             atk = 30;
